@@ -5,12 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using WindowsFormsApp;
 
 namespace DAO
 {
     public class NhanVienDAO
     {
+        public FilterDefinitionBuilder<BsonDocument> builder = Builders<BsonDocument>.Filter;
+
         private static NhanVienDAO instance;
 
         public NhanVienDAO()
@@ -22,14 +26,32 @@ namespace DAO
             get { if (instance == null) instance = new NhanVienDAO(); return instance; }
             set => instance = value;
         }
-
+        // đây nè 
         public bool Login(string userName, string passWord)
         {
-            string query = "SELECT * FROM NhanVien WHERE TenDangNhap = N'" + userName + "' AND MatKhau = N'" + passWord + "'";
+            //string query = "SELECT * FROM NhanVien WHERE TenDangNhap = N'" + userName + "' AND MatKhau = N'" + passWord + "'";
 
-            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+            //DataTable result = DataProvider.Instance.ExecuteQuery(query);
 
-            return result.Rows.Count > 0;
+            //Console. WriteLine(result);
+
+            //return result.Rows.Count > 0;
+
+            //var filter = builder.Eq("TenDangNhap", userName) & builder.Eq("MatKhau", passWord);
+
+            var collection = MongoConnect.Instance.database.GetCollection<BsonDocument>("NhanVien");
+            var filter = builder.Eq("TenDangNhap", userName) & builder.Eq("MatKhau", passWord);
+
+            var firstDocument = collection.Find(filter).ToList();
+
+            foreach (BsonDocument doc in firstDocument)
+            {
+                Console.WriteLine(doc);
+            }
+
+            Console.WriteLine(MongoConnect.ToJson(firstDocument[0]));
+
+            return true;
         }
 
         public NhanVienDTO getNVByID(string id)

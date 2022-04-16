@@ -1,0 +1,90 @@
+{ 
+    "_id" : "KH001", 
+    "MaKH" : "KH001", 
+    "TenKH" : "Bạch Long Vũ", 
+    "DiaChi" : "Quận 9 , TP.Hồ Chí Minh", 
+    "NgaySinh" : ISODate("2021-02-01T00:00:00.000+0000"), 
+    "MaTN" : "TN001", 
+    "SDT" : "0328644251"
+}
+{ 
+    "_id" : "KH002", 
+    "MaKH" : "KH002", 
+    "TenKH" : "Nguyễn Hoàng Hiệp", 
+    "DiaChi" : "Quận 8, TP.Hồ Chí Minh", 
+    "NgaySinh" : ISODate("2011-11-09T00:00:00.000+0000"), 
+    "MaTN" : "TN002", 
+    "SDT" : "0328644252"
+}
+{ 
+    "_id" : "KH003", 
+    "MaKH" : "KH003", 
+    "TenKH" : "Nguyễn Văn Tiến", 
+    "DiaChi" : "Quận 4, TP. Hồ Chí Minh", 
+    "NgaySinh" : ISODate("2011-02-09T00:00:00.000+0000"), 
+    "MaTN" : "TN003", 
+    "SDT" : "0328644253"
+}
+{ 
+    "_id" : "KH004", 
+    "MaKH" : "KH004", 
+    "TenKH" : "Lê Thị Diễm Trinh", 
+    "DiaChi" : "Quận Ba Vì , Hà Nội", 
+    "NgaySinh" : ISODate("2009-12-09T00:00:00.000+0000"), 
+    "MaTN" : "TN004", 
+    "SDT" : "0328644254"
+}
+{ 
+    "_id" : "KH005", 
+    "MaKH" : "KH005", 
+    "TenKH" : "Nguyễn Thị Thu Trang", 
+    "DiaChi" : "Quận 9, TP.Hồ Chí Minh ", 
+    "NgaySinh" : ISODate("2008-12-09T00:00:00.000+0000"), 
+    "MaTN" : "TN005", 
+    "SDT" : "0328644255"
+}
+{ 
+    "_id" : "KH006", 
+    "MaKH" : "KH006", 
+    "TenKH" : "Huỳnh Xuân Lãm ", 
+    "DiaChi" : "Quận 12, TP.Hồ Chí Minh ", 
+    "NgaySinh" : ISODate("2017-12-09T00:00:00.000+0000"), 
+    "MaTN" : "TN006", 
+    "SDT" : "0328644256"
+}
+{ 
+    "_id" : "KH007", 
+    "MaKH" : "KH007", 
+    "TenKH" : "Võ Văn Trí", 
+    "DiaChi" : "Quận 7, TP.Hồ Chí Minh ", 
+    "NgaySinh" : ISODate("2005-12-09T00:00:00.000+0000"), 
+    "MaTN" : "TN007", 
+    "SDT" : "0328644257"
+}
+{ 
+    "_id" : "KH008", 
+    "MaKH" : "KH008", 
+    "TenKH" : "Đặng Quang Trường Nguyên", 
+    "DiaChi" : "Quận 9, TP.Hồ Chí Minh", 
+    "NgaySinh" : ISODate("2020-12-09T00:00:00.000+0000"), 
+    "MaTN" : "TN008", 
+    "SDT" : "0328644258"
+}
+{ 
+    "_id" : "KH009", 
+    "MaKH" : "KH009", 
+    "TenKH" : "Nguyễn Thanh Hòa", 
+    "DiaChi" : "Quận 12, TP.Hồ Chí Minh ", 
+    "NgaySinh" : ISODate("2020-10-09T00:00:00.000+0000"), 
+    "MaTN" : "TN009", 
+    "SDT" : "0328644259"
+}
+{ 
+    "_id" : "KH010", 
+    "MaKH" : "KH010", 
+    "TenKH" : "Võ Đoàn Hoàng Long", 
+    "DiaChi" : "Quận 4, TP.Hồ Chí Minh ", 
+    "NgaySinh" : ISODate("2022-01-01T00:00:00.000+0000"), 
+    "MaTN" : "TN010", 
+    "SDT" : "0328644250"
+}

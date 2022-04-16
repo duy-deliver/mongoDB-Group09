@@ -62,3 +62,11 @@ C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\obj\Debug\DTO.csproj.Gene
 C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\obj\Debug\DTO.dll
 C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\obj\Debug\DTO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\bin\Debug\DTO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\bin\Debug\DTO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.Properties.Resources.resources
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.pdb

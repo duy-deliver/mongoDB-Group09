@@ -1,0 +1,304 @@
+{ 
+    "_id" : {
+        "MaGT" : "GT001", 
+        "MaVX" : "VX001"
+    }, 
+    "MaGT" : "GT001", 
+    "MaVX" : "VX001", 
+    "ThoiGian" : ISODate("2021-03-01T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(3), 
+    "VacXin" : {
+        "MaVX" : "VX001", 
+        "TenVX" : "Infanrix IPV+Hib", 
+        "PhongBenh" : "Bạch hầu, ho gà, uốn ván, bại liệt và Hib", 
+        "GiaBan" : NumberInt(400000), 
+        "SoLuong" : NumberInt(173), 
+        "MaLoai" : "L001", 
+        "NuocSX" : "Bỉ"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT001", 
+        "MaVX" : "VX002"
+    }, 
+    "MaGT" : "GT001", 
+    "MaVX" : "VX002", 
+    "ThoiGian" : ISODate("2021-03-01T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(2), 
+    "VacXin" : {
+        "MaVX" : "VX002", 
+        "TenVX" : "Infanrix Hexa (6in1)", 
+        "PhongBenh" : "Bạch hầu, ho gà, uốn ván, bại liệt, Hib và viêm gan B", 
+        "GiaBan" : NumberInt(400000), 
+        "SoLuong" : NumberInt(162), 
+        "MaLoai" : "L001", 
+        "NuocSX" : "Bỉ"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT001", 
+        "MaVX" : "VX005"
+    }, 
+    "MaGT" : "GT001", 
+    "MaVX" : "VX005", 
+    "ThoiGian" : ISODate("2021-03-01T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(1), 
+    "VacXin" : {
+        "MaVX" : "VX005", 
+        "TenVX" : "BCG", 
+        "PhongBenh" : "Lao, Gan", 
+        "GiaBan" : NumberInt(200000), 
+        "SoLuong" : NumberInt(159), 
+        "MaLoai" : "L001", 
+        "NuocSX" : "Việt Nam\t"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT001", 
+        "MaVX" : "VX006"
+    }, 
+    "MaGT" : "GT001", 
+    "MaVX" : "VX006", 
+    "ThoiGian" : ISODate("2021-03-01T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(1), 
+    "VacXin" : {
+        "MaVX" : "VX006", 
+        "TenVX" : "Engerix B 1ml", 
+        "PhongBenh" : "Viêm gan B trẻ em", 
+        "GiaBan" : NumberInt(200000), 
+        "SoLuong" : NumberInt(197), 
+        "MaLoai" : "L008", 
+        "NuocSX" : "Bỉ"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT002", 
+        "MaVX" : "VX004"
+    }, 
+    "MaGT" : "GT002", 
+    "MaVX" : "VX004", 
+    "ThoiGian" : ISODate("2021-06-04T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(1), 
+    "VacXin" : {
+        "MaVX" : "VX004", 
+        "TenVX" : "Synflorix", 
+        "PhongBenh" : "Các bệnh do phế cầu", 
+        "GiaBan" : NumberInt(200000), 
+        "SoLuong" : NumberInt(154), 
+        "MaLoai" : "L008", 
+        "NuocSX" : "Bỉ"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT002", 
+        "MaVX" : "VX005"
+    }, 
+    "MaGT" : "GT002", 
+    "MaVX" : "VX005", 
+    "ThoiGian" : ISODate("2021-06-04T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(1), 
+    "VacXin" : {
+        "MaVX" : "VX005", 
+        "TenVX" : "BCG", 
+        "PhongBenh" : "Lao, Gan", 
+        "GiaBan" : NumberInt(200000), 
+        "SoLuong" : NumberInt(159), 
+        "MaLoai" : "L001", 
+        "NuocSX" : "Việt Nam\t"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT002", 
+        "MaVX" : "VX007"
+    }, 
+    "MaGT" : "GT002", 
+    "MaVX" : "VX007", 
+    "ThoiGian" : ISODate("2021-06-04T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(3), 
+    "VacXin" : {
+        "MaVX" : "VX007", 
+        "TenVX" : "Euvax B 0.5ml ", 
+        "PhongBenh" : "Viêm gan B người lớn ", 
+        "GiaBan" : NumberInt(150000), 
+        "SoLuong" : NumberInt(168), 
+        "MaLoai" : "L002", 
+        "NuocSX" : "Hàn Quốc\t"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT002", 
+        "MaVX" : "VX008"
+    }, 
+    "MaGT" : "GT002", 
+    "MaVX" : "VX008", 
+    "ThoiGian" : ISODate("2021-06-04T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(2), 
+    "VacXin" : {
+        "MaVX" : "VX008", 
+        "TenVX" : "VA-Mengoc-BC ", 
+        "PhongBenh" : "Viêm màng não mô cầu BC\t", 
+        "GiaBan" : NumberInt(150000), 
+        "SoLuong" : NumberInt(65), 
+        "MaLoai" : "L001", 
+        "NuocSX" : "Cu Ba\t"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT002", 
+        "MaVX" : "VX016"
+    }, 
+    "MaGT" : "GT002", 
+    "MaVX" : "VX016", 
+    "ThoiGian" : ISODate("2021-06-04T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(2), 
+    "VacXin" : {
+        "MaVX" : "VX016", 
+        "TenVX" : "VAT", 
+        "PhongBenh" : "Phòng uốn ván", 
+        "GiaBan" : NumberInt(150000), 
+        "SoLuong" : NumberInt(70), 
+        "MaLoai" : "L004", 
+        "NuocSX" : "Việt Nam\t"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT003", 
+        "MaVX" : "VX004"
+    }, 
+    "MaGT" : "GT003", 
+    "MaVX" : "VX004", 
+    "ThoiGian" : ISODate("2021-06-11T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(1), 
+    "VacXin" : {
+        "MaVX" : "VX004", 
+        "TenVX" : "Synflorix", 
+        "PhongBenh" : "Các bệnh do phế cầu", 
+        "GiaBan" : NumberInt(200000), 
+        "SoLuong" : NumberInt(154), 
+        "MaLoai" : "L008", 
+        "NuocSX" : "Bỉ"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT003", 
+        "MaVX" : "VX005"
+    }, 
+    "MaGT" : "GT003", 
+    "MaVX" : "VX005", 
+    "ThoiGian" : ISODate("2021-06-11T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(3), 
+    "VacXin" : {
+        "MaVX" : "VX005", 
+        "TenVX" : "BCG", 
+        "PhongBenh" : "Lao, Gan", 
+        "GiaBan" : NumberInt(200000), 
+        "SoLuong" : NumberInt(159), 
+        "MaLoai" : "L001", 
+        "NuocSX" : "Việt Nam\t"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT003", 
+        "MaVX" : "VX007"
+    }, 
+    "MaGT" : "GT003", 
+    "MaVX" : "VX007", 
+    "ThoiGian" : ISODate("2021-06-11T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(2), 
+    "VacXin" : {
+        "MaVX" : "VX007", 
+        "TenVX" : "Euvax B 0.5ml ", 
+        "PhongBenh" : "Viêm gan B người lớn ", 
+        "GiaBan" : NumberInt(150000), 
+        "SoLuong" : NumberInt(168), 
+        "MaLoai" : "L002", 
+        "NuocSX" : "Hàn Quốc\t"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT004", 
+        "MaVX" : "VX002"
+    }, 
+    "MaGT" : "GT004", 
+    "MaVX" : "VX002", 
+    "ThoiGian" : ISODate("2021-06-04T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(1), 
+    "VacXin" : {
+        "MaVX" : "VX002", 
+        "TenVX" : "Infanrix Hexa (6in1)", 
+        "PhongBenh" : "Bạch hầu, ho gà, uốn ván, bại liệt, Hib và viêm gan B", 
+        "GiaBan" : NumberInt(400000), 
+        "SoLuong" : NumberInt(162), 
+        "MaLoai" : "L001", 
+        "NuocSX" : "Bỉ"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT004", 
+        "MaVX" : "VX004"
+    }, 
+    "MaGT" : "GT004", 
+    "MaVX" : "VX004", 
+    "ThoiGian" : ISODate("2021-06-04T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(2), 
+    "VacXin" : {
+        "MaVX" : "VX004", 
+        "TenVX" : "Synflorix", 
+        "PhongBenh" : "Các bệnh do phế cầu", 
+        "GiaBan" : NumberInt(200000), 
+        "SoLuong" : NumberInt(154), 
+        "MaLoai" : "L008", 
+        "NuocSX" : "Bỉ"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT005", 
+        "MaVX" : "VX002"
+    }, 
+    "MaGT" : "GT005", 
+    "MaVX" : "VX002", 
+    "ThoiGian" : ISODate("2022-01-04T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(1), 
+    "VacXin" : {
+        "MaVX" : "VX002", 
+        "TenVX" : "Infanrix Hexa (6in1)", 
+        "PhongBenh" : "Bạch hầu, ho gà, uốn ván, bại liệt, Hib và viêm gan B", 
+        "GiaBan" : NumberInt(400000), 
+        "SoLuong" : NumberInt(162), 
+        "MaLoai" : "L001", 
+        "NuocSX" : "Bỉ"
+    }
+}
+{ 
+    "_id" : {
+        "MaGT" : "GT005", 
+        "MaVX" : "VX008"
+    }, 
+    "MaGT" : "GT005", 
+    "MaVX" : "VX008", 
+    "ThoiGian" : ISODate("2022-01-04T00:00:00.000+0000"), 
+    "SoLieu" : NumberInt(2), 
+    "VacXin" : {
+        "MaVX" : "VX008", 
+        "TenVX" : "VA-Mengoc-BC ", 
+        "PhongBenh" : "Viêm màng não mô cầu BC\t", 
+        "GiaBan" : NumberInt(150000), 
+        "SoLuong" : NumberInt(65), 
+        "MaLoai" : "L001", 
+        "NuocSX" : "Cu Ba\t"
+    }
+}

@@ -1,0 +1,33 @@
+{ 
+    "_id" : ObjectId("6255a1c29971e34e2435a036"), 
+    "MaCLV" : "CLV01", 
+    "MaNV" : "NV003", 
+    "NgayLam" : ISODate("2021-12-09T00:00:00.000+0000"), 
+    "NgayKT" : ISODate("2021-12-16T00:00:00.000+0000"), 
+    "CaLamViec" : {
+        "MaCLV" : "CLV01", 
+        "Ca" : "Sáng (7h00 - 11h00)"
+    }
+}
+{ 
+    "_id" : ObjectId("6255a1c29971e34e2435a037"), 
+    "MaCLV" : "CLV02", 
+    "MaNV" : "NV005", 
+    "NgayLam" : ISODate("2021-12-28T00:00:00.000+0000"), 
+    "NgayKT" : ISODate("2021-12-28T00:00:00.000+0000"), 
+    "CaLamViec" : {
+        "MaCLV" : "CLV02", 
+        "Ca" : "Chiều (11h00 - 17h00)"
+    }
+}
+{ 
+    "_id" : ObjectId("6255a1c29971e34e2435a038"), 
+    "MaCLV" : "CLV03", 
+    "MaNV" : "NV004", 
+    "NgayLam" : ISODate("2021-12-11T00:00:00.000+0000"), 
+    "NgayKT" : ISODate("2021-12-18T00:00:00.000+0000"), 
+    "CaLamViec" : {
+        "MaCLV" : "CLV03", 
+        "Ca" : "Tối (17h00 - 23h00)"
+    }
+}

@@ -1,0 +1,96 @@
+{ 
+    "_id" : "NCC001  ", 
+    "MaNCC" : "NCC001  ", 
+    "TenNCC" : "GSK Canada", 
+    "NuocSX" : "Mỹ", 
+    "SDT" : "0997722414", 
+    "Email" : "gsk@gmail,com"
+}
+{ 
+    "_id" : "NCC002  ", 
+    "MaNCC" : "NCC002  ", 
+    "TenNCC" : "The Winn-Dixie Pharmacy", 
+    "NuocSX" : "Việt Nam", 
+    "SDT" : "0997722414", 
+    "Email" : "thewin@gmail.com"
+}
+{ 
+    "_id" : "NCC003  ", 
+    "MaNCC" : "NCC003  ", 
+    "TenNCC" : "Dominicks", 
+    "NuocSX" : "Canada", 
+    "SDT" : "0328655471", 
+    "Email" : "dominick@gmail.com"
+}
+{ 
+    "_id" : "NCC004  ", 
+    "MaNCC" : "NCC004  ", 
+    "TenNCC" : "Giant Eagle", 
+    "NuocSX" : "Hàn Quốc", 
+    "SDT" : "0327695212", 
+    "Email" : "gianteag@gmail.com"
+}
+{ 
+    "_id" : "NCC005  ", 
+    "MaNCC" : "NCC005  ", 
+    "TenNCC" : "Walgreens", 
+    "NuocSX" : "Bỉ", 
+    "SDT" : "0327695212", 
+    "Email" : "walgreens@gmail.com"
+}
+{ 
+    "_id" : "NCC006  ", 
+    "MaNCC" : "NCC006  ", 
+    "TenNCC" : "CVS Pharmacy", 
+    "NuocSX" : "Cu Ba", 
+    "SDT" : "0327695212", 
+    "Email" : "cvs@gmail.com"
+}
+{ 
+    "_id" : "NCC007  ", 
+    "MaNCC" : "NCC007  ", 
+    "TenNCC" : "Rite Aid Pharmacy", 
+    "NuocSX" : "Pháp ", 
+    "SDT" : "0327695212", 
+    "Email" : "riteaid@gmail.com"
+}
+{ 
+    "_id" : "NCC008  ", 
+    "MaNCC" : "NCC008  ", 
+    "TenNCC" : "Walmart", 
+    "NuocSX" : "Thái Lan", 
+    "SDT" : "0327695212", 
+    "Email" : "walmart@gmail.com"
+}
+{ 
+    "_id" : "NCC009  ", 
+    "MaNCC" : "NCC009  ", 
+    "TenNCC" : "Costco Pharmacy", 
+    "NuocSX" : "Ấn Độ", 
+    "SDT" : "0327695212", 
+    "Email" : "costso@gmai.com"
+}
+{ 
+    "_id" : "NCC010  ", 
+    "MaNCC" : "NCC010  ", 
+    "TenNCC" : "Safeway", 
+    "NuocSX" : "Anh", 
+    "SDT" : "0327695212", 
+    "Email" : "safeway@gmail.com"
+}
+{ 
+    "_id" : "NCC011  ", 
+    "MaNCC" : "NCC011  ", 
+    "TenNCC" : "Publix Pharmacy", 
+    "NuocSX" : "Đức", 
+    "SDT" : "0327695212", 
+    "Email" : "publix@gmail.com"
+}
+{ 
+    "_id" : "NCC012  ", 
+    "MaNCC" : "NCC012  ", 
+    "TenNCC" : "Shoprite Pharmacy", 
+    "NuocSX" : "Hà Lan", 
+    "SDT" : "0327695212", 
+    "Email" : "shoprite@gmail.com"
+}

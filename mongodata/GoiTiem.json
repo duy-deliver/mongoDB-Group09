@@ -1,0 +1,25 @@
+{ 
+    "_id" : "GT001", 
+    "MaGT" : "GT001", 
+    "TenGT" : "Gói vaccine cho trẻ (0 đến 9 tháng tuổi)"
+}
+{ 
+    "_id" : "GT002", 
+    "MaGT" : "GT002", 
+    "TenGT" : "Gói vaccine cho trẻ tiền học đường"
+}
+{ 
+    "_id" : "GT003", 
+    "MaGT" : "GT003", 
+    "TenGT" : "Gói vaccine cho tuổi vị thành niên (8 đến 19 tuổi)"
+}
+{ 
+    "_id" : "GT004", 
+    "MaGT" : "GT004", 
+    "TenGT" : "Gói vaccine cho người trưởng thành (trên 18 tuổi)"
+}
+{ 
+    "_id" : "GT005", 
+    "MaGT" : "GT005", 
+    "TenGT" : "Gói vaccine cho phụ nữ chuẩn bị mang trước mang thai"
+}

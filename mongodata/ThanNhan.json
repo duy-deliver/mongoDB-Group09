@@ -1,0 +1,70 @@
+{ 
+    "_id" : "TN001", 
+    "MaTN" : "TN001", 
+    "TenTN" : "Nguyễn Hữu An", 
+    "MoiQuanHe" : "Anh", 
+    "SDT" : "0935958952"
+}
+{ 
+    "_id" : "TN002", 
+    "MaTN" : "TN002", 
+    "TenTN" : "Nguyễn Thị Bảo Trân", 
+    "MoiQuanHe" : "Mẹ", 
+    "SDT" : "0935968952"
+}
+{ 
+    "_id" : "TN003", 
+    "MaTN" : "TN003", 
+    "TenTN" : "Phan Thái Lâm", 
+    "MoiQuanHe" : "Bố", 
+    "SDT" : "0935558952"
+}
+{ 
+    "_id" : "TN004", 
+    "MaTN" : "TN004", 
+    "TenTN" : "Nguyễn Thị Diễm Trinh", 
+    "MoiQuanHe" : "Mẹ", 
+    "SDT" : "0265958952"
+}
+{ 
+    "_id" : "TN005", 
+    "MaTN" : "TN005", 
+    "TenTN" : "Nguyễn Thành Tiến", 
+    "MoiQuanHe" : "Anh", 
+    "SDT" : "0235958952"
+}
+{ 
+    "_id" : "TN006", 
+    "MaTN" : "TN006", 
+    "TenTN" : "Nguyễn Tường Vy", 
+    "MoiQuanHe" : "Mẹ", 
+    "SDT" : "0937958952"
+}
+{ 
+    "_id" : "TN007", 
+    "MaTN" : "TN007", 
+    "TenTN" : "Đào Duy Khánh", 
+    "MoiQuanHe" : "Bố", 
+    "SDT" : "0836958952"
+}
+{ 
+    "_id" : "TN008", 
+    "MaTN" : "TN008", 
+    "TenTN" : "Bùi Quốc Lâm", 
+    "MoiQuanHe" : "Bố", 
+    "SDT" : "0935953952"
+}
+{ 
+    "_id" : "TN009", 
+    "MaTN" : "TN009", 
+    "TenTN" : "Đặng Võ Công Thành", 
+    "MoiQuanHe" : "Bố", 
+    "SDT" : "0337958952"
+}
+{ 
+    "_id" : "TN010", 
+    "MaTN" : "TN010", 
+    "TenTN" : "Lê Nhật Anh", 
+    "MoiQuanHe" : "Bố", 
+    "SDT" : "0735958952"
+}

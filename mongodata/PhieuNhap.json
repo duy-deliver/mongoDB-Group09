@@ -1,0 +1,98 @@
+{ 
+    "_id" : "PN001     ", 
+    "MaPN" : "PN001     ", 
+    "MaNCC" : "NCC001    ", 
+    "NgayNhap" : ISODate("2021-11-19T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN002     ", 
+    "MaPN" : "PN002     ", 
+    "MaNCC" : "NCC002    ", 
+    "NgayNhap" : ISODate("2021-11-19T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN003     ", 
+    "MaPN" : "PN003     ", 
+    "MaNCC" : "NCC003    ", 
+    "NgayNhap" : ISODate("2021-11-19T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN004     ", 
+    "MaPN" : "PN004     ", 
+    "MaNCC" : "NCC004    ", 
+    "NgayNhap" : ISODate("2021-11-19T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN005", 
+    "MaPN" : "PN005", 
+    "MaNCC" : "NCC002  ", 
+    "NgayNhap" : ISODate("2021-12-05T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN006", 
+    "MaPN" : "PN006", 
+    "MaNCC" : "NCC002  ", 
+    "NgayNhap" : ISODate("2021-12-06T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN007", 
+    "MaPN" : "PN007", 
+    "MaNCC" : "NCC004  ", 
+    "NgayNhap" : ISODate("2021-12-09T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN008", 
+    "MaPN" : "PN008", 
+    "MaNCC" : "NCC003  ", 
+    "NgayNhap" : ISODate("2021-12-09T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN009", 
+    "MaPN" : "PN009", 
+    "MaNCC" : "NCC003  ", 
+    "NgayNhap" : ISODate("2021-12-09T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN010", 
+    "MaPN" : "PN010", 
+    "MaNCC" : "NCC002  ", 
+    "NgayNhap" : ISODate("2021-12-10T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN011", 
+    "MaPN" : "PN011", 
+    "MaNCC" : "NCC002", 
+    "NgayNhap" : ISODate("2021-12-11T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN012", 
+    "MaPN" : "PN012", 
+    "MaNCC" : "NCC003", 
+    "NgayNhap" : ISODate("2021-12-11T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN013", 
+    "MaPN" : "PN013", 
+    "MaNCC" : "NCC007  ", 
+    "NgayNhap" : ISODate("2022-01-02T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}
+{ 
+    "_id" : "PN014", 
+    "MaPN" : "PN014", 
+    "MaNCC" : "NCC007  ", 
+    "NgayNhap" : ISODate("2022-01-02T00:00:00.000+0000"), 
+    "MaNV" : "NV002"
+}

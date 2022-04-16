@@ -1,0 +1,270 @@
+{ 
+    "_id" : {
+        "MaPN" : "PN001     ", 
+        "MaVX" : "VX001"
+    }, 
+    "MaPN" : "PN001     ", 
+    "MaVX" : "VX001", 
+    "SoLuong" : NumberInt(200), 
+    "DonGia" : 350000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN001     ", 
+        "MaVX" : "VX002"
+    }, 
+    "MaPN" : "PN001     ", 
+    "MaVX" : "VX002", 
+    "SoLuong" : NumberInt(200), 
+    "DonGia" : 360000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN001     ", 
+        "MaVX" : "VX003"
+    }, 
+    "MaPN" : "PN001     ", 
+    "MaVX" : "VX003", 
+    "SoLuong" : NumberInt(200), 
+    "DonGia" : 110000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN002     ", 
+        "MaVX" : "VX004"
+    }, 
+    "MaPN" : "PN002     ", 
+    "MaVX" : "VX004", 
+    "SoLuong" : NumberInt(200), 
+    "DonGia" : 170000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN003     ", 
+        "MaVX" : "VX005"
+    }, 
+    "MaPN" : "PN003     ", 
+    "MaVX" : "VX005", 
+    "SoLuong" : NumberInt(200), 
+    "DonGia" : 160000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN004     ", 
+        "MaVX" : "VX006"
+    }, 
+    "MaPN" : "PN004     ", 
+    "MaVX" : "VX006", 
+    "SoLuong" : NumberInt(200), 
+    "DonGia" : 150000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN005", 
+        "MaVX" : "VX006"
+    }, 
+    "MaPN" : "PN005", 
+    "MaVX" : "VX006", 
+    "SoLuong" : NumberInt(10), 
+    "DonGia" : 180000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN006", 
+        "MaVX" : "VX007"
+    }, 
+    "MaPN" : "PN006", 
+    "MaVX" : "VX007", 
+    "SoLuong" : NumberInt(100), 
+    "DonGia" : 130000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN007", 
+        "MaVX" : "VX007"
+    }, 
+    "MaPN" : "PN007", 
+    "MaVX" : "VX007", 
+    "SoLuong" : NumberInt(100), 
+    "DonGia" : 130000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN008", 
+        "MaVX" : "VX007"
+    }, 
+    "MaPN" : "PN008", 
+    "MaVX" : "VX007", 
+    "SoLuong" : NumberInt(20), 
+    "DonGia" : 135000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN009", 
+        "MaVX" : "VX008"
+    }, 
+    "MaPN" : "PN009", 
+    "MaVX" : "VX008", 
+    "SoLuong" : NumberInt(100), 
+    "DonGia" : 120000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN010", 
+        "MaVX" : "VX009"
+    }, 
+    "MaPN" : "PN010", 
+    "MaVX" : "VX009", 
+    "SoLuong" : NumberInt(100), 
+    "DonGia" : 130000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN010", 
+        "MaVX" : "VX010"
+    }, 
+    "MaPN" : "PN010", 
+    "MaVX" : "VX010", 
+    "SoLuong" : NumberInt(100), 
+    "DonGia" : 180000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN011", 
+        "MaVX" : "VX011"
+    }, 
+    "MaPN" : "PN011", 
+    "MaVX" : "VX011", 
+    "SoLuong" : NumberInt(202), 
+    "DonGia" : 130000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN011", 
+        "MaVX" : "VX012"
+    }, 
+    "MaPN" : "PN011", 
+    "MaVX" : "VX012", 
+    "SoLuong" : NumberInt(85), 
+    "DonGia" : 125000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN011", 
+        "MaVX" : "VX013"
+    }, 
+    "MaPN" : "PN011", 
+    "MaVX" : "VX013", 
+    "SoLuong" : NumberInt(98), 
+    "DonGia" : 150000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN011", 
+        "MaVX" : "VX014"
+    }, 
+    "MaPN" : "PN011", 
+    "MaVX" : "VX014", 
+    "SoLuong" : NumberInt(98), 
+    "DonGia" : 180000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN011", 
+        "MaVX" : "VX015"
+    }, 
+    "MaPN" : "PN011", 
+    "MaVX" : "VX015", 
+    "SoLuong" : NumberInt(202), 
+    "DonGia" : 130000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN011", 
+        "MaVX" : "VX016"
+    }, 
+    "MaPN" : "PN011", 
+    "MaVX" : "VX016", 
+    "SoLuong" : NumberInt(85), 
+    "DonGia" : 150000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN011", 
+        "MaVX" : "VX017"
+    }, 
+    "MaPN" : "PN011", 
+    "MaVX" : "VX017", 
+    "SoLuong" : NumberInt(98), 
+    "DonGia" : 130000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN012", 
+        "MaVX" : "VX018"
+    }, 
+    "MaPN" : "PN012", 
+    "MaVX" : "VX018", 
+    "SoLuong" : NumberInt(98), 
+    "DonGia" : 190000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN012", 
+        "MaVX" : "VX019"
+    }, 
+    "MaPN" : "PN012", 
+    "MaVX" : "VX019", 
+    "SoLuong" : NumberInt(202), 
+    "DonGia" : 130000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN012", 
+        "MaVX" : "VX020"
+    }, 
+    "MaPN" : "PN012", 
+    "MaVX" : "VX020", 
+    "SoLuong" : NumberInt(85), 
+    "DonGia" : 120000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN012", 
+        "MaVX" : "VX021"
+    }, 
+    "MaPN" : "PN012", 
+    "MaVX" : "VX021", 
+    "SoLuong" : NumberInt(98), 
+    "DonGia" : 140000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN012", 
+        "MaVX" : "VX022"
+    }, 
+    "MaPN" : "PN012", 
+    "MaVX" : "VX022", 
+    "SoLuong" : NumberInt(98), 
+    "DonGia" : 180000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN013", 
+        "MaVX" : "VX023"
+    }, 
+    "MaPN" : "PN013", 
+    "MaVX" : "VX023", 
+    "SoLuong" : NumberInt(5), 
+    "DonGia" : 140000.0
+}
+{ 
+    "_id" : {
+        "MaPN" : "PN014", 
+        "MaVX" : "VX023"
+    }, 
+    "MaPN" : "PN014", 
+    "MaVX" : "VX023", 
+    "SoLuong" : NumberInt(5), 
+    "DonGia" : 140000.0
+}

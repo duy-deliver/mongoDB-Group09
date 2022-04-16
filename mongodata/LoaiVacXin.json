@@ -1,0 +1,40 @@
+{ 
+    "_id" : "L001", 
+    "MaLoai" : "L001", 
+    "TenLoai" : "Trẻ em dưới 10 tuổi"
+}
+{ 
+    "_id" : "L002", 
+    "MaLoai" : "L002", 
+    "TenLoai" : "Người trưởng thành"
+}
+{ 
+    "_id" : "L003", 
+    "MaLoai" : "L003", 
+    "TenLoai" : "Trẻ em dưới 1 tuổi"
+}
+{ 
+    "_id" : "L004", 
+    "MaLoai" : "L004", 
+    "TenLoai" : "Trẻ em dưới 12 tuổi"
+}
+{ 
+    "_id" : "L005", 
+    "MaLoai" : "L005", 
+    "TenLoai" : "Phụ nữ cho con bú"
+}
+{ 
+    "_id" : "L006", 
+    "MaLoai" : "L006", 
+    "TenLoai" : "Phụ nữ chuẩn bị mang thai"
+}
+{ 
+    "_id" : "L007", 
+    "MaLoai" : "L007", 
+    "TenLoai" : "Phụ nữ mang thai"
+}
+{ 
+    "_id" : "L008", 
+    "MaLoai" : "L008", 
+    "TenLoai" : "Người tuổi vị thành niên"
+}

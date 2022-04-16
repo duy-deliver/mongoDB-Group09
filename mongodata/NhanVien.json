@@ -1,0 +1,48 @@
+{ 
+    "_id" : "NV001", 
+    "MaNV" : "NV001", 
+    "TenHienThi" : "Hồ Minh", 
+    "GioiTinh" : "Nam", 
+    "DiaChi" : "Quận 9, TP.Hồ Chí Minh", 
+    "SDT" : "0963528491", 
+    "Quyen" : "Bán hàng", 
+    "TenDangNhap" : "minh", 
+    "MatKhau" : "123", 
+    "Email" : "minhho@gmail.com"
+}
+{ 
+    "_id" : "NV002", 
+    "MaNV" : "NV002", 
+    "TenHienThi" : "Nguyễn Thị Thế Phương", 
+    "GioiTinh" : "Nam", 
+    "DiaChi" : "Quận 8, TP.Hồ Chí Minh", 
+    "SDT" : "0328644278", 
+    "Quyen" : "Quản lý", 
+    "TenDangNhap" : "phuong", 
+    "MatKhau" : "123", 
+    "Email" : "phuong@gmail.com"
+}
+{ 
+    "_id" : "NV003", 
+    "MaNV" : "NV003", 
+    "TenHienThi" : "Nguyễn Đức Anh", 
+    "GioiTinh" : "Nam", 
+    "DiaChi" : "Quận 9, TP.Hồ Chí Minh", 
+    "SDT" : "0328644258", 
+    "Quyen" : "Kế toán", 
+    "TenDangNhap" : "ducanh", 
+    "MatKhau" : "123", 
+    "Email" : "ducanh@gmail.com"
+}
+{ 
+    "_id" : "NV004", 
+    "MaNV" : "NV004", 
+    "TenHienThi" : "Tô Đông Phát", 
+    "GioiTinh" : "Nam", 
+    "DiaChi" : "Quận 9, TP.Hồ Chí Minh", 
+    "SDT" : "0987528554", 
+    "Quyen" : "Thủ kho", 
+    "TenDangNhap" : "phat", 
+    "MatKhau" : "123", 
+    "Email" : "phat@gmail.com"
+}

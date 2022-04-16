@@ -1,0 +1,230 @@
+{ 
+    "_id" : "VX001", 
+    "MaVX" : "VX001", 
+    "TenVX" : "Infanrix IPV+Hib", 
+    "PhongBenh" : "Bạch hầu, ho gà, uốn ván, bại liệt và Hib", 
+    "GiaBan" : NumberInt(400000), 
+    "SoLuong" : NumberInt(173), 
+    "MaLoai" : "L001", 
+    "NuocSX" : "Bỉ"
+}
+{ 
+    "_id" : "VX002", 
+    "MaVX" : "VX002", 
+    "TenVX" : "Infanrix Hexa (6in1)", 
+    "PhongBenh" : "Bạch hầu, ho gà, uốn ván, bại liệt, Hib và viêm gan B", 
+    "GiaBan" : NumberInt(400000), 
+    "SoLuong" : NumberInt(162), 
+    "MaLoai" : "L001", 
+    "NuocSX" : "Bỉ"
+}
+{ 
+    "_id" : "VX003", 
+    "MaVX" : "VX003", 
+    "TenVX" : "Rotateq", 
+    "PhongBenh" : "Rota virus", 
+    "GiaBan" : NumberInt(150000), 
+    "SoLuong" : NumberInt(169), 
+    "MaLoai" : "L002", 
+    "NuocSX" : "Mỹ\t"
+}
+{ 
+    "_id" : "VX004", 
+    "MaVX" : "VX004", 
+    "TenVX" : "Synflorix", 
+    "PhongBenh" : "Các bệnh do phế cầu", 
+    "GiaBan" : NumberInt(200000), 
+    "SoLuong" : NumberInt(154), 
+    "MaLoai" : "L008", 
+    "NuocSX" : "Bỉ"
+}
+{ 
+    "_id" : "VX005", 
+    "MaVX" : "VX005", 
+    "TenVX" : "BCG", 
+    "PhongBenh" : "Lao, Gan", 
+    "GiaBan" : NumberInt(200000), 
+    "SoLuong" : NumberInt(159), 
+    "MaLoai" : "L001", 
+    "NuocSX" : "Việt Nam\t"
+}
+{ 
+    "_id" : "VX006", 
+    "MaVX" : "VX006", 
+    "TenVX" : "Engerix B 1ml", 
+    "PhongBenh" : "Viêm gan B trẻ em", 
+    "GiaBan" : NumberInt(200000), 
+    "SoLuong" : NumberInt(197), 
+    "MaLoai" : "L008", 
+    "NuocSX" : "Bỉ"
+}
+{ 
+    "_id" : "VX007", 
+    "MaVX" : "VX007", 
+    "TenVX" : "Euvax B 0.5ml ", 
+    "PhongBenh" : "Viêm gan B người lớn ", 
+    "GiaBan" : NumberInt(150000), 
+    "SoLuong" : NumberInt(168), 
+    "MaLoai" : "L002", 
+    "NuocSX" : "Hàn Quốc\t"
+}
+{ 
+    "_id" : "VX008", 
+    "MaVX" : "VX008", 
+    "TenVX" : "VA-Mengoc-BC ", 
+    "PhongBenh" : "Viêm màng não mô cầu BC\t", 
+    "GiaBan" : NumberInt(150000), 
+    "SoLuong" : NumberInt(65), 
+    "MaLoai" : "L001", 
+    "NuocSX" : "Cu Ba\t"
+}
+{ 
+    "_id" : "VX009", 
+    "MaVX" : "VX009", 
+    "TenVX" : "Menactra", 
+    "PhongBenh" : "Viêm màng não mô cầu ACYW\t", 
+    "GiaBan" : NumberInt(160000), 
+    "SoLuong" : NumberInt(93), 
+    "MaLoai" : "L008", 
+    "NuocSX" : "Mỹ\t"
+}
+{ 
+    "_id" : "VX010", 
+    "MaVX" : "VX010", 
+    "TenVX" : "MVVac (Lọ 5ml) ", 
+    "PhongBenh" : "Sởi", 
+    "GiaBan" : NumberInt(210000), 
+    "SoLuong" : NumberInt(97), 
+    "MaLoai" : "L001", 
+    "NuocSX" : "Việt Nam\t"
+}
+{ 
+    "_id" : "VX011", 
+    "MaVX" : "VX011", 
+    "TenVX" : "MMR II (3 in 1)\t ", 
+    "PhongBenh" : "Sởi – Quai bị – Rubella ", 
+    "GiaBan" : NumberInt(150000), 
+    "SoLuong" : NumberInt(200), 
+    "MaLoai" : "L002", 
+    "NuocSX" : "Mỹ\t"
+}
+{ 
+    "_id" : "VX012", 
+    "MaVX" : "VX012", 
+    "TenVX" : "Varivax ", 
+    "PhongBenh" : "Thủy đậu", 
+    "GiaBan" : NumberInt(150000), 
+    "SoLuong" : NumberInt(85), 
+    "MaLoai" : "L002", 
+    "NuocSX" : "Mỹ\t"
+}
+{ 
+    "_id" : "VX013", 
+    "MaVX" : "VX013", 
+    "TenVX" : "Vaxigrip Tetra 0.5ml", 
+    "PhongBenh" : "Cúm", 
+    "GiaBan" : NumberInt(160000), 
+    "SoLuong" : NumberInt(92), 
+    "MaLoai" : "L008", 
+    "NuocSX" : "Pháp\t"
+}
+{ 
+    "_id" : "VX014", 
+    "MaVX" : "VX014", 
+    "TenVX" : "Ivacflu-S 0,5ml\t", 
+    "PhongBenh" : "Cúm (người lớn > 18 tuổi)", 
+    "GiaBan" : NumberInt(210000), 
+    "SoLuong" : NumberInt(98), 
+    "MaLoai" : "L004", 
+    "NuocSX" : "Việt Nam\t"
+}
+{ 
+    "_id" : "VX015", 
+    "MaVX" : "VX015", 
+    "TenVX" : "Gardasil 0.5ml\t ", 
+    "PhongBenh" : "Ung thư cổ tử cung và u nhú bộ phận sinh dục, sùi mào gà", 
+    "GiaBan" : NumberInt(150000), 
+    "SoLuong" : NumberInt(202), 
+    "MaLoai" : "L002", 
+    "NuocSX" : "Mỹ\t"
+}
+{ 
+    "_id" : "VX016", 
+    "MaVX" : "VX016", 
+    "TenVX" : "VAT", 
+    "PhongBenh" : "Phòng uốn ván", 
+    "GiaBan" : NumberInt(150000), 
+    "SoLuong" : NumberInt(70), 
+    "MaLoai" : "L004", 
+    "NuocSX" : "Việt Nam\t"
+}
+{ 
+    "_id" : "VX017", 
+    "MaVX" : "VX017", 
+    "TenVX" : "Imojev", 
+    "PhongBenh" : "Viêm não Nhật Bản", 
+    "GiaBan" : NumberInt(160000), 
+    "SoLuong" : NumberInt(98), 
+    "MaLoai" : "L008", 
+    "NuocSX" : "Việt Nam\t"
+}
+{ 
+    "_id" : "VX018", 
+    "MaVX" : "VX018", 
+    "TenVX" : "Verorab 0,5ml (TB, TTD)\t ", 
+    "PhongBenh" : "Vắc xin phòng dại", 
+    "GiaBan" : NumberInt(210000), 
+    "SoLuong" : NumberInt(96), 
+    "MaLoai" : "L004", 
+    "NuocSX" : "Pháp\t"
+}
+{ 
+    "_id" : "VX019", 
+    "MaVX" : "VX019", 
+    "TenVX" : "Adacel\t", 
+    "PhongBenh" : "Bạch hầu – Uốn ván – Ho gà ", 
+    "GiaBan" : NumberInt(150000), 
+    "SoLuong" : NumberInt(202), 
+    "MaLoai" : "L002", 
+    "NuocSX" : "Canada\t"
+}
+{ 
+    "_id" : "VX020", 
+    "MaVX" : "VX020", 
+    "TenVX" : "Tetraxim\t", 
+    "PhongBenh" : "Bạch hầu – Ho gà – Uốn ván – Bại liệt", 
+    "GiaBan" : NumberInt(150000), 
+    "SoLuong" : NumberInt(85), 
+    "MaLoai" : "L008", 
+    "NuocSX" : "Pháp\t"
+}
+{ 
+    "_id" : "VX021", 
+    "MaVX" : "VX021", 
+    "TenVX" : "Uốn ván, bạch hầu hấp phụ (Td)-Lọ 0,5ml", 
+    "PhongBenh" : "Bạch hầu – Uốn ván", 
+    "GiaBan" : NumberInt(160000), 
+    "SoLuong" : NumberInt(97), 
+    "MaLoai" : "L001", 
+    "NuocSX" : "Việt Nam\t"
+}
+{ 
+    "_id" : "VX022", 
+    "MaVX" : "VX022", 
+    "TenVX" : "Twinrix", 
+    "PhongBenh" : "Viêm gan B và Viêm gan A", 
+    "GiaBan" : NumberInt(210000), 
+    "SoLuong" : NumberInt(98), 
+    "MaLoai" : "L004", 
+    "NuocSX" : "Bỉ"
+}
+{ 
+    "_id" : "VX023", 
+    "MaVX" : "VX023", 
+    "TenVX" : "Entra2 (5ml)", 
+    "PhongBenh" : "Viêm hô hấp cho trẻ", 
+    "GiaBan" : NumberInt(170000), 
+    "SoLuong" : NumberInt(5), 
+    "MaLoai" : "L004", 
+    "NuocSX" : "Nga"
+}
