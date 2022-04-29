@@ -17,6 +17,7 @@ namespace DAO
         {
         }
 
+
         public static LoaiHangDAO Intance
         {
             get { if (instance == null) instance = new LoaiHangDAO(); return instance; }

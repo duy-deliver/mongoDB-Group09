@@ -26,32 +26,56 @@ namespace DAO
             get { if (instance == null) instance = new NhanVienDAO(); return instance; }
             set => instance = value;
         }
-        // đây nè 
+
         public bool Login(string userName, string passWord)
         {
-            //string query = "SELECT * FROM NhanVien WHERE TenDangNhap = N'" + userName + "' AND MatKhau = N'" + passWord + "'";
+            string query = "SELECT * FROM NhanVien WHERE TenDangNhap = N'" + userName + "' AND MatKhau = N'" + passWord + "'";
 
-            //DataTable result = DataProvider.Instance.ExecuteQuery(query);
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
 
-            //Console. WriteLine(result);
+            Console.WriteLine(result);
 
-            //return result.Rows.Count > 0;
+            return result.Rows.Count > 0;
 
+            //var collection = MongoConnect.Instance.database.GetCollection<BsonDocument>("NhanVien");
             //var filter = builder.Eq("TenDangNhap", userName) & builder.Eq("MatKhau", passWord);
 
-            var collection = MongoConnect.Instance.database.GetCollection<BsonDocument>("NhanVien");
-            var filter = builder.Eq("TenDangNhap", userName) & builder.Eq("MatKhau", passWord);
+            //var firstDocument = collection.Find(filter).ToList();
 
-            var firstDocument = collection.Find(filter).ToList();
+            //DataTable result = new DataTable();
 
-            foreach (BsonDocument doc in firstDocument)
-            {
-                Console.WriteLine(doc);
-            }
 
-            Console.WriteLine(MongoConnect.ToJson(firstDocument[0]));
+            //foreach (BsonDocument doc in firstDocument)
+            //{
+            //    //Console.WriteLine(doc);
+            //    //Console.WriteLine(doc["MatKhau"]);
 
-            return true;
+            //    result.Clear();
+            //    result.Columns.Add("MaNV");
+            //    result.Columns.Add("TenHienThi");
+            //    result.Columns.Add("GioiTinh");
+            //    result.Columns.Add("DiaChi");
+            //    result.Columns.Add("SDT");
+            //    result.Columns.Add("Quyen");
+            //    result.Columns.Add("TenDangNhap");
+            //    result.Columns.Add("MatKhau");
+            //    result.Columns.Add("Email");
+            //    DataRow _ravi = result.NewRow();
+            //    _ravi["MaNV"] = doc["MaNV"];
+            //    _ravi["TenHienThi"] = doc["TenHienThi"];
+            //    _ravi["GioiTinh"] = doc["GioiTinh"];
+            //    _ravi["DiaChi"] = doc["DiaChi"];
+            //    _ravi["SDT"] = doc["SDT"];
+            //    _ravi["Quyen"] = doc["Quyen"];
+            //    _ravi["TenDangNhap"] = doc["TenDangNhap"];
+            //    _ravi["MatKhau"] = doc["MatKhau"];
+            //    _ravi["Email"] = doc["Email"];
+            //    result.Rows.Add(_ravi);
+            //}
+
+            //Console.WriteLine(MongoConnect.ToJson(firstDocument[0]));
+
+            //return result.Rows.Count > 0;
         }
 
         public NhanVienDTO getNVByID(string id)
