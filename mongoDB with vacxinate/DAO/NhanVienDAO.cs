@@ -5,16 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
-using MongoDB.Bson;
-using MongoDB.Driver;
 using WindowsFormsApp;
 
 namespace DAO
 {
     public class NhanVienDAO
     {
-        public FilterDefinitionBuilder<BsonDocument> builder = Builders<BsonDocument>.Filter;
-
         private static NhanVienDAO instance;
 
         public NhanVienDAO()
@@ -33,49 +29,7 @@ namespace DAO
 
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
 
-            Console.WriteLine(result);
-
             return result.Rows.Count > 0;
-
-            //var collection = MongoConnect.Instance.database.GetCollection<BsonDocument>("NhanVien");
-            //var filter = builder.Eq("TenDangNhap", userName) & builder.Eq("MatKhau", passWord);
-
-            //var firstDocument = collection.Find(filter).ToList();
-
-            //DataTable result = new DataTable();
-
-
-            //foreach (BsonDocument doc in firstDocument)
-            //{
-            //    //Console.WriteLine(doc);
-            //    //Console.WriteLine(doc["MatKhau"]);
-
-            //    result.Clear();
-            //    result.Columns.Add("MaNV");
-            //    result.Columns.Add("TenHienThi");
-            //    result.Columns.Add("GioiTinh");
-            //    result.Columns.Add("DiaChi");
-            //    result.Columns.Add("SDT");
-            //    result.Columns.Add("Quyen");
-            //    result.Columns.Add("TenDangNhap");
-            //    result.Columns.Add("MatKhau");
-            //    result.Columns.Add("Email");
-            //    DataRow _ravi = result.NewRow();
-            //    _ravi["MaNV"] = doc["MaNV"];
-            //    _ravi["TenHienThi"] = doc["TenHienThi"];
-            //    _ravi["GioiTinh"] = doc["GioiTinh"];
-            //    _ravi["DiaChi"] = doc["DiaChi"];
-            //    _ravi["SDT"] = doc["SDT"];
-            //    _ravi["Quyen"] = doc["Quyen"];
-            //    _ravi["TenDangNhap"] = doc["TenDangNhap"];
-            //    _ravi["MatKhau"] = doc["MatKhau"];
-            //    _ravi["Email"] = doc["Email"];
-            //    result.Rows.Add(_ravi);
-            //}
-
-            //Console.WriteLine(MongoConnect.ToJson(firstDocument[0]));
-
-            //return result.Rows.Count > 0;
         }
 
         public NhanVienDTO getNVByID(string id)
@@ -185,14 +139,6 @@ namespace DAO
             string query = "SELECT SDT FROM NhanVien WHERE SDT = N'" + id + "'";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             return dt;
-        }
-
-
-        public DataTable TKNhanVien()
-        {
-            string query = "USP_TKNhanVien";
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            return data;
         }
     }
 }
