@@ -76,16 +76,85 @@ C:\Users\Nguyen Cong Chi\Desktop\FashionShop\BUS\obj\Debug\BUS.csproj.CoreCompil
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\BUS\obj\Debug\BUS.dll
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\BUS\obj\Debug\BUS.pdb
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\bin\Debug\BUS.dll
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\bin\Debug\BUS.pdb
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\bin\Debug\DAO.dll
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\bin\Debug\DTO.dll
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\bin\Debug\DAO.pdb
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\bin\Debug\DTO.pdb
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.Properties.Resources.resources
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.csproj.CopyComplete
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.dll
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.pdb
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\bin\Debug\BUS.dll
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\bin\Debug\BUS.pdb
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\bin\Debug\DAO.dll
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\bin\Debug\DTO.dll
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\bin\Debug\DAO.pdb
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\bin\Debug\DTO.pdb
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\obj\Debug\BUS.dll
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\BUS\obj\Debug\BUS.pdb
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\bin\Debug\BUS.dll
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\bin\Debug\BUS.pdb
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\bin\Debug\DAO.dll
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\bin\Debug\DTO.dll
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\bin\Debug\DAO.pdb
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\bin\Debug\DTO.pdb
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\obj\Debug\BUS.dll
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\BUS\obj\Debug\BUS.pdb
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\bin\Debug\BUS.dll
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\bin\Debug\BUS.pdb
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\bin\Debug\DAO.dll
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\bin\Debug\DTO.dll
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\bin\Debug\DAO.pdb
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\bin\Debug\DTO.pdb
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\obj\Debug\BUS.dll
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\BUS\obj\Debug\BUS.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\BUS.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\BUS.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\DAO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\DTO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\DAO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\DTO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\obj\Debug\BUS.Properties.Resources.resources
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\obj\Debug\BUS.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\obj\Debug\BUS.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\libzstd.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\snappy32.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\snappy64.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\libsnappy64.so
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\libzstd.so
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\libsnappy64.dylib
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\libzstd.dylib
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\mongocrypt.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\BUS.dll.config
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\MongoDB.Driver.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\MongoDB.Bson.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\Newtonsoft.Json.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\MongoDB.Driver.Core.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\DnsClient.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\SharpCompress.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\System.Buffers.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\System.Memory.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\System.Numerics.Vectors.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\DAO.dll.config
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\MongoDB.Driver.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\MongoDB.Bson.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\Newtonsoft.Json.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\MongoDB.Driver.Core.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\DnsClient.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\System.Buffers.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\System.Memory.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\BUS\bin\Debug\System.Numerics.Vectors.xml
