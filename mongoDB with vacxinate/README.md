@@ -46,23 +46,3 @@
 
 ### :computer: How to run
 
-#### Step 1. Clone the repository:
-
-```
-$ git clone https://github.com/buivantann/fashion-shop-manager.git
-```
-
-#### Step 2. Install package 
-
-```
-$ at Manage Nuget Packages...
-```
-
-#### Step 3. Update link database connection at connection section DAO and GUI
-
-#### Step 4. Run
-
-
-
-### Author: Bui Van Tan, Nguyen Cong Chi
-
