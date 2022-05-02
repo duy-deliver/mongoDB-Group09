@@ -55,6 +55,14 @@ namespace WindowsFormsApp
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 15;
@@ -71,10 +79,11 @@ namespace WindowsFormsApp
             this.btnQuaylai.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnQuaylai.IconSize = 35;
             this.btnQuaylai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuaylai.Location = new System.Drawing.Point(-11, 18);
+            this.btnQuaylai.Location = new System.Drawing.Point(-10, 14);
+            this.btnQuaylai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuaylai.Name = "btnQuaylai";
-            this.btnQuaylai.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnQuaylai.Size = new System.Drawing.Size(62, 48);
+            this.btnQuaylai.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnQuaylai.Size = new System.Drawing.Size(55, 38);
             this.btnQuaylai.TabIndex = 294;
             this.btnQuaylai.Text = "        ";
             this.btnQuaylai.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -83,9 +92,10 @@ namespace WindowsFormsApp
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.Capture1;
-            this.pictureBox2.Location = new System.Drawing.Point(-107, 621);
+            this.pictureBox2.Location = new System.Drawing.Point(-95, 497);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(840, 334);
+            this.pictureBox2.Size = new System.Drawing.Size(747, 267);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 293;
             this.pictureBox2.TabStop = false;
@@ -95,9 +105,9 @@ namespace WindowsFormsApp
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(69, 562);
+            this.label8.Location = new System.Drawing.Point(61, 450);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(507, 22);
+            this.label8.Size = new System.Drawing.Size(440, 19);
             this.label8.TabIndex = 292;
             this.label8.Text = "Hỗ trợ khách hàng từ 8h00 đến 21h00 tất cả các ngày trong tuần\r\n";
             // 
@@ -106,9 +116,9 @@ namespace WindowsFormsApp
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(381, 514);
+            this.label7.Location = new System.Drawing.Point(339, 411);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 23);
+            this.label7.Size = new System.Drawing.Size(85, 19);
             this.label7.TabIndex = 291;
             this.label7.Text = "1900 8086";
             // 
@@ -117,9 +127,9 @@ namespace WindowsFormsApp
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(135, 515);
+            this.label6.Location = new System.Drawing.Point(120, 412);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(229, 22);
+            this.label6.Size = new System.Drawing.Size(196, 19);
             this.label6.TabIndex = 290;
             this.label6.Text = "Tổng đài hỗ trợ khách hàng:\r\n";
             // 
@@ -136,10 +146,11 @@ namespace WindowsFormsApp
             this.btnCapNhat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCapNhat.IconSize = 25;
             this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhat.Location = new System.Drawing.Point(200, 414);
+            this.btnCapNhat.Location = new System.Drawing.Point(178, 331);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCapNhat.Size = new System.Drawing.Size(229, 55);
+            this.btnCapNhat.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnCapNhat.Size = new System.Drawing.Size(204, 44);
             this.btnCapNhat.TabIndex = 289;
             this.btnCapNhat.Text = "         Cập nhật";
             this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -150,9 +161,9 @@ namespace WindowsFormsApp
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(193, 140);
+            this.label4.Location = new System.Drawing.Point(172, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 40);
+            this.label4.Size = new System.Drawing.Size(146, 35);
             this.label4.TabIndex = 288;
             this.label4.Text = "Đổi mật khẩu";
             // 
@@ -162,11 +173,11 @@ namespace WindowsFormsApp
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.label3.Location = new System.Drawing.Point(262, 79);
+            this.label3.Location = new System.Drawing.Point(233, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 35);
+            this.label3.Size = new System.Drawing.Size(130, 29);
             this.label3.TabIndex = 287;
-            this.label3.Text = "Fashion System";
+            this.label3.Text = "Vacxin System";
             // 
             // label2
             // 
@@ -174,11 +185,11 @@ namespace WindowsFormsApp
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.label2.Location = new System.Drawing.Point(210, -2);
+            this.label2.Location = new System.Drawing.Point(318, -3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 81);
+            this.label2.Size = new System.Drawing.Size(78, 68);
             this.label2.TabIndex = 286;
-            this.label2.Text = "a p e";
+            this.label2.Text = "09";
             // 
             // label1
             // 
@@ -186,11 +197,11 @@ namespace WindowsFormsApp
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(197)))), ((int)(((byte)(150)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(157, 18);
+            this.label1.Location = new System.Drawing.Point(140, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 55);
+            this.label1.Size = new System.Drawing.Size(172, 46);
             this.label1.TabIndex = 285;
-            this.label1.Text = "S";
+            this.label1.Text = "GROUP";
             // 
             // btnEyeMKM
             // 
@@ -205,10 +216,11 @@ namespace WindowsFormsApp
             this.btnEyeMKM.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEyeMKM.IconSize = 30;
             this.btnEyeMKM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEyeMKM.Location = new System.Drawing.Point(543, 330);
+            this.btnEyeMKM.Location = new System.Drawing.Point(483, 264);
+            this.btnEyeMKM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEyeMKM.Name = "btnEyeMKM";
-            this.btnEyeMKM.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnEyeMKM.Size = new System.Drawing.Size(56, 33);
+            this.btnEyeMKM.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnEyeMKM.Size = new System.Drawing.Size(50, 26);
             this.btnEyeMKM.TabIndex = 300;
             this.btnEyeMKM.Text = "  ";
             this.btnEyeMKM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -227,10 +239,11 @@ namespace WindowsFormsApp
             this.btneyemkmeye.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btneyemkmeye.IconSize = 30;
             this.btneyemkmeye.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btneyemkmeye.Location = new System.Drawing.Point(537, 330);
+            this.btneyemkmeye.Location = new System.Drawing.Point(477, 264);
+            this.btneyemkmeye.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btneyemkmeye.Name = "btneyemkmeye";
-            this.btneyemkmeye.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btneyemkmeye.Size = new System.Drawing.Size(59, 33);
+            this.btneyemkmeye.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btneyemkmeye.Size = new System.Drawing.Size(52, 26);
             this.btneyemkmeye.TabIndex = 299;
             this.btneyemkmeye.Text = "  ";
             this.btneyemkmeye.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -254,14 +267,15 @@ namespace WindowsFormsApp
             this.txtMKMOI.ForeColor = System.Drawing.Color.DarkGray;
             this.txtMKMOI.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMKMOI.HoverState.Parent = this.txtMKMOI;
-            this.txtMKMOI.Location = new System.Drawing.Point(18, 319);
-            this.txtMKMOI.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
+            this.txtMKMOI.Location = new System.Drawing.Point(16, 255);
+            this.txtMKMOI.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtMKMOI.Name = "txtMKMOI";
             this.txtMKMOI.PasswordChar = '\0';
             this.txtMKMOI.PlaceholderText = "";
             this.txtMKMOI.SelectedText = "";
+            this.txtMKMOI.SelectionStart = 17;
             this.txtMKMOI.ShadowDecoration.Parent = this.txtMKMOI;
-            this.txtMKMOI.Size = new System.Drawing.Size(591, 54);
+            this.txtMKMOI.Size = new System.Drawing.Size(525, 43);
             this.txtMKMOI.TabIndex = 298;
             // 
             // btnEyeSlash
@@ -277,10 +291,11 @@ namespace WindowsFormsApp
             this.btnEyeSlash.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEyeSlash.IconSize = 30;
             this.btnEyeSlash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEyeSlash.Location = new System.Drawing.Point(540, 228);
+            this.btnEyeSlash.Location = new System.Drawing.Point(480, 182);
+            this.btnEyeSlash.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEyeSlash.Name = "btnEyeSlash";
-            this.btnEyeSlash.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnEyeSlash.Size = new System.Drawing.Size(56, 33);
+            this.btnEyeSlash.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnEyeSlash.Size = new System.Drawing.Size(50, 26);
             this.btnEyeSlash.TabIndex = 297;
             this.btnEyeSlash.Text = "  ";
             this.btnEyeSlash.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -299,10 +314,11 @@ namespace WindowsFormsApp
             this.btnEye.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEye.IconSize = 30;
             this.btnEye.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEye.Location = new System.Drawing.Point(540, 228);
+            this.btnEye.Location = new System.Drawing.Point(480, 182);
+            this.btnEye.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEye.Name = "btnEye";
-            this.btnEye.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnEye.Size = new System.Drawing.Size(59, 33);
+            this.btnEye.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnEye.Size = new System.Drawing.Size(52, 26);
             this.btnEye.TabIndex = 296;
             this.btnEye.Text = "  ";
             this.btnEye.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -326,19 +342,20 @@ namespace WindowsFormsApp
             this.txtHoVaTen.ForeColor = System.Drawing.Color.DarkGray;
             this.txtHoVaTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHoVaTen.HoverState.Parent = this.txtHoVaTen;
-            this.txtHoVaTen.Location = new System.Drawing.Point(18, 218);
-            this.txtHoVaTen.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
+            this.txtHoVaTen.Location = new System.Drawing.Point(16, 174);
+            this.txtHoVaTen.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.txtHoVaTen.Name = "txtHoVaTen";
             this.txtHoVaTen.PasswordChar = '\0';
             this.txtHoVaTen.PlaceholderText = "";
             this.txtHoVaTen.SelectedText = "";
+            this.txtHoVaTen.SelectionStart = 19;
             this.txtHoVaTen.ShadowDecoration.Parent = this.txtHoVaTen;
-            this.txtHoVaTen.Size = new System.Drawing.Size(591, 54);
+            this.txtHoVaTen.Size = new System.Drawing.Size(525, 43);
             this.txtHoVaTen.TabIndex = 295;
             // 
             // UC_DoiMatKhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnEyeMKM);
@@ -357,9 +374,9 @@ namespace WindowsFormsApp
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UC_DoiMatKhau";
-            this.Size = new System.Drawing.Size(627, 952);
+            this.Size = new System.Drawing.Size(557, 762);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

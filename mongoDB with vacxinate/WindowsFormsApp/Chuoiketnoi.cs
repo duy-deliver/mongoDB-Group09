@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 
 namespace WindowsFormsApp
 {
@@ -12,7 +7,7 @@ namespace WindowsFormsApp
         string str;
         public Chuoiketnoi()
         {
-            str = @"Data Source=DESKTOP-RNOPI29;Initial Catalog=QLCuaHangThoiTrang;User ID=sa;Password=123";
+            str = @"Data Source=minhho;Initial Catalog=[HeThongTiemChung];Integrated Security=True";
         }
 
         public SqlConnection sqlConnection()

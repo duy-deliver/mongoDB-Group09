@@ -33,12 +33,18 @@ namespace WindowsFormsApp
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.pannelLeft1 = new System.Windows.Forms.Panel();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelControls = new System.Windows.Forms.Panel();
             this.lblTime = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.btnX = new System.Windows.Forms.Button();
+            this.pcbBell = new FontAwesome.Sharp.IconPictureBox();
             this.lblTenNhanVien = new System.Windows.Forms.Label();
             this.lblTenNV = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -47,10 +53,6 @@ namespace WindowsFormsApp
             this.lblMaNV = new System.Windows.Forms.Label();
             this.lblQuyen = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pnlDiChuyen = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.pcbBell = new FontAwesome.Sharp.IconPictureBox();
             this.btnKhuyenMai = new FontAwesome.Sharp.IconButton();
             this.btnThongKe = new FontAwesome.Sharp.IconButton();
             this.btnNhaCungCap = new FontAwesome.Sharp.IconButton();
@@ -59,15 +61,13 @@ namespace WindowsFormsApp
             this.btnBanHang = new FontAwesome.Sharp.IconButton();
             this.btnKhachHang = new FontAwesome.Sharp.IconButton();
             this.btnTrangchu = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.pnlDiChuyen = new System.Windows.Forms.Panel();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pannelLeft1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBell)).BeginInit();
+            this.panelLeft.SuspendLayout();
             this.SuspendLayout();
             // 
             // label17
@@ -86,11 +86,11 @@ namespace WindowsFormsApp
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Silver;
-            this.label16.Location = new System.Drawing.Point(11, 813);
+            this.label16.Location = new System.Drawing.Point(53, 813);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(216, 23);
+            this.label16.Size = new System.Drawing.Size(113, 23);
             this.label16.TabIndex = 4;
-            this.label16.Text = "72 Tăng Phú, Quận 9, HCM";
+            this.label16.Text = "Grou09, HCM";
             // 
             // pannelLeft1
             // 
@@ -105,6 +105,44 @@ namespace WindowsFormsApp
             this.pannelLeft1.Size = new System.Drawing.Size(228, 116);
             this.pannelLeft1.TabIndex = 0;
             // 
+            // iconButton4
+            // 
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton4.ForeColor = System.Drawing.Color.White;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Bars;
+            this.iconButton4.IconColor = System.Drawing.Color.White;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.IconSize = 40;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.Location = new System.Drawing.Point(179, 5);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(43, 44);
+            this.iconButton4.TabIndex = 44;
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.UseVisualStyleBackColor = true;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.ForeColor = System.Drawing.Color.White;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.AppleAlt;
+            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(197)))), ((int)(((byte)(150)))));
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 40;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(25, 48);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(43, 38);
+            this.iconButton3.TabIndex = 43;
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -113,21 +151,21 @@ namespace WindowsFormsApp
             this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(102, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 28);
+            this.label3.Size = new System.Drawing.Size(116, 28);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Fashion System";
+            this.label3.Text = "Vacxin System";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(64, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 46);
+            this.label2.Size = new System.Drawing.Size(166, 44);
             this.label2.TabIndex = 4;
-            this.label2.Text = "w e n";
+            this.label2.Text = "group09";
             // 
             // panelControls
             // 
@@ -166,6 +204,59 @@ namespace WindowsFormsApp
             this.panel3.Size = new System.Drawing.Size(1254, 48);
             this.panel3.TabIndex = 7;
             // 
+            // iconButton2
+            // 
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.White;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 40;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(665, 11);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(43, 44);
+            this.iconButton2.TabIndex = 42;
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.History;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 35;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(15, 5);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(43, 39);
+            this.iconButton1.TabIndex = 41;
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 30;
+            this.iconPictureBox1.Location = new System.Drawing.Point(1152, 11);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(38, 30);
+            this.iconPictureBox1.TabIndex = 26;
+            this.iconPictureBox1.TabStop = false;
+            // 
             // btnX
             // 
             this.btnX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
@@ -179,6 +270,21 @@ namespace WindowsFormsApp
             this.btnX.Text = "X";
             this.btnX.UseVisualStyleBackColor = false;
             this.btnX.Click += new System.EventHandler(this.btnX_Click);
+            // 
+            // pcbBell
+            // 
+            this.pcbBell.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pcbBell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.pcbBell.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.pcbBell.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.pcbBell.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pcbBell.IconSize = 30;
+            this.pcbBell.Location = new System.Drawing.Point(1108, 13);
+            this.pcbBell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbBell.Name = "pcbBell";
+            this.pcbBell.Size = new System.Drawing.Size(38, 30);
+            this.pcbBell.TabIndex = 24;
+            this.pcbBell.TabStop = false;
             // 
             // lblTenNhanVien
             // 
@@ -266,50 +372,6 @@ namespace WindowsFormsApp
             this.label4.Size = new System.Drawing.Size(65, 23);
             this.label4.TabIndex = 37;
             this.label4.Text = "Địa Chỉ";
-            // 
-            // pnlDiChuyen
-            // 
-            this.pnlDiChuyen.BackColor = System.Drawing.Color.White;
-            this.pnlDiChuyen.Location = new System.Drawing.Point(3, 128);
-            this.pnlDiChuyen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlDiChuyen.Name = "pnlDiChuyen";
-            this.pnlDiChuyen.Size = new System.Drawing.Size(12, 69);
-            this.pnlDiChuyen.TabIndex = 7;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 18;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Heart;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 30;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1152, 11);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(38, 30);
-            this.iconPictureBox1.TabIndex = 26;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // pcbBell
-            // 
-            this.pcbBell.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pcbBell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.pcbBell.IconChar = FontAwesome.Sharp.IconChar.Bell;
-            this.pcbBell.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.pcbBell.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pcbBell.IconSize = 30;
-            this.pcbBell.Location = new System.Drawing.Point(1108, 13);
-            this.pcbBell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pcbBell.Name = "pcbBell";
-            this.pcbBell.Size = new System.Drawing.Size(38, 30);
-            this.pcbBell.TabIndex = 24;
-            this.pcbBell.TabStop = false;
             // 
             // btnKhuyenMai
             // 
@@ -479,81 +541,19 @@ namespace WindowsFormsApp
             this.btnTrangchu.UseVisualStyleBackColor = true;
             this.btnTrangchu.Click += new System.EventHandler(this.btnTrangchu_Click_1);
             // 
-            // iconButton1
+            // pnlDiChuyen
             // 
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.History;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 35;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(15, 5);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(43, 39);
-            this.iconButton1.TabIndex = 41;
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.pnlDiChuyen.BackColor = System.Drawing.Color.White;
+            this.pnlDiChuyen.Location = new System.Drawing.Point(3, 128);
+            this.pnlDiChuyen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlDiChuyen.Name = "pnlDiChuyen";
+            this.pnlDiChuyen.Size = new System.Drawing.Size(12, 69);
+            this.pnlDiChuyen.TabIndex = 7;
             // 
-            // iconButton2
+            // bunifuElipse1
             // 
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 40;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(665, 11);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(43, 44);
-            this.iconButton2.TabIndex = 42;
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.AppleAlt;
-            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(197)))), ((int)(((byte)(150)))));
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 40;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(25, 48);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(43, 38);
-            this.iconButton3.TabIndex = 43;
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Bars;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 40;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(179, 5);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(43, 44);
-            this.iconButton4.TabIndex = 44;
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.UseVisualStyleBackColor = true;
+            this.bunifuElipse1.ElipseRadius = 18;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // FormTrangChu1
             // 
@@ -572,10 +572,10 @@ namespace WindowsFormsApp
             this.pannelLeft1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panelLeft.ResumeLayout(false);
-            this.panelLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBell)).EndInit();
+            this.panelLeft.ResumeLayout(false);
+            this.panelLeft.PerformLayout();
             this.ResumeLayout(false);
 
         }

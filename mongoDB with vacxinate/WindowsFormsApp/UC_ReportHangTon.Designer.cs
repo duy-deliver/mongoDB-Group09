@@ -61,7 +61,7 @@ namespace WindowsFormsApp
             this.panel1.Controls.Add(this.reportViewer1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1254, 834);
             this.panel1.TabIndex = 0;
@@ -79,7 +79,7 @@ namespace WindowsFormsApp
             this.btnQuaylai.IconSize = 35;
             this.btnQuaylai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuaylai.Location = new System.Drawing.Point(2, 59);
-            this.btnQuaylai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQuaylai.Margin = new System.Windows.Forms.Padding(2);
             this.btnQuaylai.Name = "btnQuaylai";
             this.btnQuaylai.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.btnQuaylai.Size = new System.Drawing.Size(71, 40);
@@ -95,7 +95,7 @@ namespace WindowsFormsApp
             this.panel2.Controls.Add(this.lblTk);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1254, 54);
             this.panel2.TabIndex = 223;
@@ -118,11 +118,12 @@ namespace WindowsFormsApp
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApp.Report.ReportHangTon.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(245, 58);
-            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(777, 776);
             this.reportViewer1.TabIndex = 222;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // UC_ReportHangTon
             // 
@@ -130,7 +131,7 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_ReportHangTon";
             this.Size = new System.Drawing.Size(1254, 834);
             ((System.ComponentModel.ISupportInitialize)(this.DataTable3BindingSource)).EndInit();

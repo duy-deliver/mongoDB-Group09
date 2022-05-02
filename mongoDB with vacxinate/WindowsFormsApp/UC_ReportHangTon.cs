@@ -61,5 +61,10 @@ namespace WindowsFormsApp
             UC_ThongKeHangHoa f = new UC_ThongKeHangHoa();
             addUC(f);
         }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

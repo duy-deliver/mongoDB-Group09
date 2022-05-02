@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Globalization;
-using BUS;
+﻿using BUS;
 using DTO;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
+using System.Globalization;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
@@ -33,7 +29,7 @@ namespace WindowsFormsApp
             cmbTenhh.ValueMember = "TenMH";
 
 
-          
+
 
 
             this.tennv = tennv;
@@ -460,59 +456,13 @@ namespace WindowsFormsApp
 
 
                     DataTable dt = KhachHangBUS.Intance.TimKiemDiemTichLuy(lblMaKH.Text);
-                    if (dt.Rows.Count > 0)
+                    if (dt.Rows.Count >= 0)
                     {
-                        string Diem = dt.Rows[0]["DiemTichLuy"].ToString();
-                        int diem = Int32.Parse(Diem);
-                        if (diem >= 50 && diem < 100)
-                        {
-                            if (MessageBox.Show("Khách hàng có Voucher giảm giá 5% (mua hàng trên 5 lần), Khách hàng có muốn sử dụng", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                            {
-                                tiengiam = tiengiam + (tongTien * 5 / 100);
-                                tongTien = tongTien - (tongTien * 5 / 100);
-                                lblTiengiam.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tiengiam) + " VNĐ";
-                                lblTongtien.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tongTien) + " VNĐ";
-                                string query = "update KhachHang set DiemTichLuy = DiemTichLuy - " + 50 + " where MaKH = '" + lblMaKH.Text + "'";  // cập nhật lại số lượng 
-                                DataProvider.Instance.ExecuteQuery(query);
-                                Tinhtienhoantra();
-                                LamMoi();
-                            }
-                            else
-                            {
-                                string query = "update KhachHang set DiemTichLuy = DiemTichLuy + " + 10 + " where MaKH = '" + lblMaKH.Text + "'";  // cập nhật lại số lượng 
-                                DataProvider.Instance.ExecuteQuery(query);
-                                LamMoi();
+                       
+                        string query = "update KhachHang set DiemTichLuy = DiemTichLuy + " + 10 + " where MaKH = '" + lblMaKH.Text + "'";  // cập nhật lại số lượng 
+                        DataProvider.Instance.ExecuteQuery(query);
+                        LamMoi();
 
-                            }
-                        }
-                        else if (diem >= 100)
-                        {
-                            if (MessageBox.Show("Khách hàng có Voucher giảm giá 15% (mua hàng trên 10 lần), Khách hàng có muốn sử dụng", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                            {
-                                tiengiam = tiengiam + (tongTien * 15 / 100);
-                                tongTien = tongTien - (tongTien * 15 / 100);
-                                lblTiengiam.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tiengiam) + " VNĐ";
-                                lblTongtien.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tongTien) + " VNĐ";
-                                string query = "update KhachHang set DiemTichLuy = DiemTichLuy - " + 100 + " where MaKH = '" + lblMaKH.Text + "'";  // cập nhật lại số lượng 
-                                DataProvider.Instance.ExecuteQuery(query);
-                                Tinhtienhoantra();
-                                LamMoi();
-                            }
-                            else
-                            {
-                                string query = "update KhachHang set DiemTichLuy = DiemTichLuy + " + 10 + " where MaKH = '" + lblMaKH.Text + "'";  // cập nhật lại số lượng 
-                                DataProvider.Instance.ExecuteQuery(query);
-                                LamMoi();
-
-                            }
-                        }
-                        else
-                        {
-
-                            string query = "update KhachHang set DiemTichLuy = DiemTichLuy + " + 10 + " where MaKH = '" + lblMaKH.Text + "'";  // cập nhật lại số lượng 
-                            DataProvider.Instance.ExecuteQuery(query);
-                            LamMoi();
-                        }
                     }
                     else
                     {
@@ -537,6 +487,21 @@ namespace WindowsFormsApp
         }
 
         private void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMahd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTenNV_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMaKH_Click(object sender, EventArgs e)
         {
 
         }

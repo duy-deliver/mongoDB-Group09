@@ -74,3 +74,14 @@ C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.csp
 C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.dll
 C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.pdb
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\bin\Debug\DAO.dll
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\bin\Debug\DAO.pdb
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\bin\Debug\DTO.dll
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\bin\Debug\DTO.pdb
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.dll
+C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.pdb

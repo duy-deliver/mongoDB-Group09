@@ -64,7 +64,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Nguyen Cong Chi\Desktop\fashion-shop-manager\WindowsFormsApp\DataSet1.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Ho Minh\Desktop\Group09\WindowsFormsApp\DataSet1.xsd</rd:SchemaPath>
         <rd:TableName>DataTable2</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -93,7 +93,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>CỬA HÀNG THỜI TRANG</Value>
+                    <Value>VACXIN MANAGEMENT</Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>12pt</FontSize>
@@ -127,7 +127,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Cảm ơn quý khách đã mua sắm </Value>
+                    <Value>Cảm ơn quý khách đã mua vacxin </Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>12pt</FontSize>
@@ -169,7 +169,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value> Lê Văn Việt, Phường Tăng Nhơn Phú A, Quận </Value>
+                    <Value> Khoa Hoc Tu Nhien - District5 </Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>12pt</FontSize>
