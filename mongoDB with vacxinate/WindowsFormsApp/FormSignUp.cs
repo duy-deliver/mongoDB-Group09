@@ -269,16 +269,6 @@ namespace WindowsFormsApp
         {
             Application.Exit();
         }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
     }
 

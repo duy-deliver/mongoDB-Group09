@@ -89,16 +89,3 @@ C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.csp
 C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.dll
 C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\BUS\obj\Debug\BUS.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\bin\Debug\BUS.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\bin\Debug\BUS.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\bin\Debug\DAO.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\bin\Debug\DTO.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\bin\Debug\DAO.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\bin\Debug\DTO.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\obj\Debug\BUS.Properties.Resources.resources
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\obj\Debug\BUS.csproj.CopyComplete
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\obj\Debug\BUS.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\BUS\obj\Debug\BUS.pdb

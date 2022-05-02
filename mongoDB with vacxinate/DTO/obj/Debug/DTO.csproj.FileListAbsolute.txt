@@ -46,11 +46,3 @@ C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DTO\obj\Debug\DTO.csproj.GenerateRe
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DTO\obj\Debug\DTO.dll
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DTO\obj\Debug\DTO.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\bin\Debug\DTO.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\bin\Debug\DTO.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.Properties.Resources.resources
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.pdb

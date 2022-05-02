@@ -65,10 +65,5 @@ namespace WindowsFormsApp
             UC_ReportPhieuNhap f = new UC_ReportPhieuNhap(temp);
             addUC(f);
         }
-
-        private void UC_ThongKePhieuNhap_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

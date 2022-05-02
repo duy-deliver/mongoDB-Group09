@@ -114,10 +114,5 @@ namespace WindowsFormsApp
         {
             Application.Exit();      
         }
-
-        private void iconButton3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

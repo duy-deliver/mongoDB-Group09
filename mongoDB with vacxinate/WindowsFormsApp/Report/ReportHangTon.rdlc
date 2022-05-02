@@ -48,7 +48,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Ho Minh\Desktop\Group09\WindowsFormsApp\DataSet1.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Nguyen Cong Chi\Desktop\FashionShop\WindowsFormsApp\DataSet1.xsd</rd:SchemaPath>
         <rd:TableName>DataTable3</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -67,7 +67,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>GROUP09 VACXIN MANAGEMENT </Value>
+                    <Value>Cửa Hàng Thời Trang </Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>13pt</FontSize>
@@ -101,7 +101,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Thống Kê VacXin Trong Cửa Hàng </Value>
+                    <Value>Thống Kê Hàng Hóa Trong Cửa Hàng </Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>13pt</FontSize>
@@ -135,7 +135,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Khoa Hoc Tu Nhien - District5 </Value>
+                    <Value>449/50 - Phường 12 - Quận 9 - Thành Phố Hồ Chí Minh </Value>
                     <Style>
                       <FontFamily>Cambria</FontFamily>
                     </Style>
@@ -198,7 +198,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Mã vacxin</Value>
+                                  <Value>Mã mặt hàng</Value>
                                   <Style>
                                     <FontFamily>Sitka Banner</FontFamily>
                                     <FontSize>11pt</FontSize>

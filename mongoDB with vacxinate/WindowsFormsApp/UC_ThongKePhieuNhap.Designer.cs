@@ -264,7 +264,6 @@ namespace WindowsFormsApp
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKePhieuNhap";
             this.Size = new System.Drawing.Size(1254, 834);
-            this.Load += new System.EventHandler(this.UC_ThongKePhieuNhap_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSearch)).EndInit();

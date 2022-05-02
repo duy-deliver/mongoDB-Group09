@@ -153,7 +153,7 @@ namespace WindowsFormsApp
             this.txtMatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatkhau.HoverState.Parent = this.txtMatkhau;
             this.txtMatkhau.Location = new System.Drawing.Point(21, 646);
-            this.txtMatkhau.Margin = new System.Windows.Forms.Padding(5);
+            this.txtMatkhau.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtMatkhau.Name = "txtMatkhau";
             this.txtMatkhau.PasswordChar = '*';
             this.txtMatkhau.PlaceholderText = "";
@@ -194,7 +194,7 @@ namespace WindowsFormsApp
             this.txtTenDangNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenDangNhap.HoverState.Parent = this.txtTenDangNhap;
             this.txtTenDangNhap.Location = new System.Drawing.Point(23, 546);
-            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.PasswordChar = '\0';
             this.txtTenDangNhap.PlaceholderText = "";
@@ -256,7 +256,7 @@ namespace WindowsFormsApp
             this.txtTennv.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTennv.HoverState.Parent = this.txtTennv;
             this.txtTennv.Location = new System.Drawing.Point(27, 189);
-            this.txtTennv.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTennv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTennv.Name = "txtTennv";
             this.txtTennv.PasswordChar = '\0';
             this.txtTennv.PlaceholderText = "";
@@ -298,7 +298,7 @@ namespace WindowsFormsApp
             this.txtSĐT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSĐT.HoverState.Parent = this.txtSĐT;
             this.txtSĐT.Location = new System.Drawing.Point(27, 281);
-            this.txtSĐT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSĐT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSĐT.Name = "txtSĐT";
             this.txtSĐT.PasswordChar = '\0';
             this.txtSĐT.PlaceholderText = "";
@@ -340,7 +340,7 @@ namespace WindowsFormsApp
             this.txtDiachi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiachi.HoverState.Parent = this.txtDiachi;
             this.txtDiachi.Location = new System.Drawing.Point(27, 366);
-            this.txtDiachi.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiachi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.PasswordChar = '\0';
             this.txtDiachi.PlaceholderText = "";
@@ -521,11 +521,11 @@ namespace WindowsFormsApp
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
             this.label13.Location = new System.Drawing.Point(452, 843);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 36);
+            this.label13.Size = new System.Drawing.Size(80, 37);
             this.label13.TabIndex = 273;
             this.label13.Text = "w e n";
             // 
@@ -533,14 +533,13 @@ namespace WindowsFormsApp
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.label14.Location = new System.Drawing.Point(119, -8);
+            this.label14.Location = new System.Drawing.Point(228, -11);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(323, 69);
+            this.label14.Size = new System.Drawing.Size(150, 72);
             this.label14.TabIndex = 279;
-            this.label14.Text = "GROUP09";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
+            this.label14.Text = "w e n";
             // 
             // iconButton1
             // 
@@ -553,14 +552,13 @@ namespace WindowsFormsApp
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 60;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(64, 4);
+            this.iconButton1.Location = new System.Drawing.Point(169, 4);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(78, 57);
             this.iconButton1.TabIndex = 278;
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // FormSignUp
             // 

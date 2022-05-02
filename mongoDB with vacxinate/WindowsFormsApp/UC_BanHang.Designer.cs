@@ -78,7 +78,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtTimkiem = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pcbSearch = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblkh = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -104,14 +103,15 @@
             this.btnThanhtoan = new FontAwesome.Sharp.IconButton();
             this.btnXoa = new FontAwesome.Sharp.IconButton();
             this.btnThem = new FontAwesome.Sharp.IconButton();
+            this.pcbSearch = new FontAwesome.Sharp.IconPictureBox();
             this.hangHoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong)).BeginInit();
             this.pnlgiohang.SuspendLayout();
             this.pnlKh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbSearch)).BeginInit();
             this.pnlTT.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hangHoaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,7 +170,6 @@
             this.lblTenNV.Size = new System.Drawing.Size(159, 23);
             this.lblTenNV.TabIndex = 226;
             this.lblTenNV.Text = " Nguyễn Công Chí";
-            this.lblTenNV.Click += new System.EventHandler(this.lblTenNV_Click);
             // 
             // panel1
             // 
@@ -430,7 +429,6 @@
             this.lblMahd.Size = new System.Drawing.Size(59, 20);
             this.lblMahd.TabIndex = 223;
             this.lblMahd.Text = "HĐ015";
-            this.lblMahd.Click += new System.EventHandler(this.lblMahd_Click);
             // 
             // label3
             // 
@@ -625,7 +623,6 @@
             this.lblMaKH.Size = new System.Drawing.Size(59, 20);
             this.lblMaKH.TabIndex = 237;
             this.lblMaKH.Text = "KH002";
-            this.lblMaKH.Click += new System.EventHandler(this.lblMaKH_Click);
             // 
             // label18
             // 
@@ -739,21 +736,6 @@
             this.txtTimkiem.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiem.TabIndex = 52;
             this.txtTimkiem.TextChanged += new System.EventHandler(this.txtTimkiem_TextChanged);
-            // 
-            // pcbSearch
-            // 
-            this.pcbSearch.BackColor = System.Drawing.Color.White;
-            this.pcbSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pcbSearch.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.pcbSearch.IconColor = System.Drawing.SystemColors.ControlText;
-            this.pcbSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pcbSearch.IconSize = 34;
-            this.pcbSearch.Location = new System.Drawing.Point(421, 38);
-            this.pcbSearch.Name = "pcbSearch";
-            this.pcbSearch.Size = new System.Drawing.Size(36, 34);
-            this.pcbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbSearch.TabIndex = 51;
-            this.pcbSearch.TabStop = false;
             // 
             // label1
             // 
@@ -1108,6 +1090,21 @@
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
+            // pcbSearch
+            // 
+            this.pcbSearch.BackColor = System.Drawing.Color.White;
+            this.pcbSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pcbSearch.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.pcbSearch.IconColor = System.Drawing.SystemColors.ControlText;
+            this.pcbSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pcbSearch.IconSize = 34;
+            this.pcbSearch.Location = new System.Drawing.Point(421, 38);
+            this.pcbSearch.Name = "pcbSearch";
+            this.pcbSearch.Size = new System.Drawing.Size(36, 34);
+            this.pcbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbSearch.TabIndex = 51;
+            this.pcbSearch.TabStop = false;
+            // 
             // hangHoaBindingSource
             // 
             this.hangHoaBindingSource.DataMember = "HangHoa";
@@ -1144,9 +1141,9 @@
             this.pnlgiohang.ResumeLayout(false);
             this.pnlKh.ResumeLayout(false);
             this.pnlKh.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbSearch)).EndInit();
             this.pnlTT.ResumeLayout(false);
             this.pnlTT.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hangHoaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
