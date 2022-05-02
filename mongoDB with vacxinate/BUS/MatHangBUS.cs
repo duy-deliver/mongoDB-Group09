@@ -23,7 +23,11 @@ namespace BUS
             set => instance = value;
         }
 
-       
+        public bool temHH(MatHangDTO data, string imgLocation)
+        {
+            return MatHangDAO.Intance.temHH(data, imgLocation);
+        }
+
         public void capNhatHinh(string imgLocation, string maHang)
         {
             MatHangDAO.Intance.capNhatHinh(imgLocation, maHang);
@@ -46,9 +50,9 @@ namespace BUS
             return MatHangDAO.Intance.get(maSP);
         } */
 
-        public bool suaHH(string MaHang, string TenHH, string loai, int GiaBan, string phongbenh, string nuocsx)
+        public bool suaHH(string MaHang, string TenHH, string loai, string GiaBan, string DonVi)
         {
-            return MatHangDAO.Intance.suaHH(MaHang, TenHH, loai, GiaBan, phongbenh,nuocsx);
+            return MatHangDAO.Intance.suaHH(MaHang, TenHH, loai, GiaBan, DonVi);
         }
 
         public bool kiemtraXoa(string maHang)

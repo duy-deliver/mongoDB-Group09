@@ -18,24 +18,22 @@ namespace WindowsFormsApp
         private string mahd;
         private string Tienkhachdua;
         private string Tienhoantra;
-        private string TienBangChu;
+        private string Tiendagiam;
         private string TongTien;
 
-        public FormInHoaDon(string mahd, string Tienkhachdua, string Tienhoantra, string TienBangChu, string TongTien)  //string mahd, string Tienkhachdua, string Tienhoantra, string Tiendagiam, string TongTien
+        public FormInHoaDon(string mahd, string Tienkhachdua, string Tienhoantra, string Tiendagiam, string TongTien)
         {
             InitializeComponent();
             this.mahd = mahd;
             this.Tienkhachdua = Tienkhachdua;
             this.Tienhoantra = Tienhoantra;
-            this.TienBangChu = TienBangChu;
+            this.Tiendagiam = Tiendagiam;
             this.TongTien = TongTien;
         }
 
 
         Chuoiketnoi chuoiketnoi = new Chuoiketnoi();
-       
-
-        private void HienThi()
+        private void FormInHoaDon_Load(object sender, EventArgs e)
         {
             SqlConnection con = chuoiketnoi.sqlConnection();
             con.Open();
@@ -49,22 +47,13 @@ namespace WindowsFormsApp
            {
                 new ReportParameter("Tienkhachdua", Tienkhachdua),
                 new ReportParameter("Tienhoantra", Tienhoantra),
-                new ReportParameter("TongTien", TongTien),
-                new ReportParameter("TienBangChu", TienBangChu)
+                new ReportParameter("Tiendagiam", Tiendagiam),
+                new ReportParameter("TongTien", TongTien)
            };
             this.reportViewer1.LocalReport.SetParameters(rptParams);
             this.reportViewer1.LocalReport.DataSources.Clear();
             this.reportViewer1.LocalReport.DataSources.Add(dataSource);
             this.reportViewer1.RefreshReport();
-        }
-
-        private void reportViewer1_Load(object sender, EventArgs e)
-        {
-            HienThi();
-        }
-
-        private void FormInHoaDon_Load(object sender, EventArgs e)
-        {
 
         }
     }

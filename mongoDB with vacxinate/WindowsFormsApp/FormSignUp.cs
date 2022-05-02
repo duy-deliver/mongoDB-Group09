@@ -46,8 +46,7 @@ namespace WindowsFormsApp
             {
                 int k;
                 ma = "NV";
-                //k = Convert.ToInt32(dt.Rows.Count);
-                k = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][0].ToString().Substring(2, 3));
+                k = Convert.ToInt32(dt.Rows.Count);
                 k++;
                 if (k < 10)
                 {
@@ -115,8 +114,8 @@ namespace WindowsFormsApp
 
         private void LamMoi()
         {
-            txtTenDangNhap.Text = "VD: VanA";
-            txtTennv.Text = "VD: Nguyễn Văn A";
+            txtTenDangNhap.Text = "VD: chi";
+            txtTennv.Text = "VD: Nguyễn Công Chí";
             txtDiachi.Text = "An Chấn, Tuy An, Phú Yên";
             txtMatkhau.Text = "****";
             txtSĐT.Text = "VD: 0328644258";
@@ -264,6 +263,11 @@ namespace WindowsFormsApp
         private void txtSĐT_TextChanged(object sender, EventArgs e)
         {
             lblThongbao.Text = "";
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
     }

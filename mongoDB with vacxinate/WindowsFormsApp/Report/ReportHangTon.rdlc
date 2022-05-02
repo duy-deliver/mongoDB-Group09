@@ -17,20 +17,24 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="MaVX">
-          <DataField>MaVX</DataField>
+        <Field Name="MaMH">
+          <DataField>MaMH</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="TenVX">
-          <DataField>TenVX</DataField>
+        <Field Name="TenMH">
+          <DataField>TenMH</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="SLNhap">
-          <DataField>SLNhap</DataField>
+        <Field Name="DonVi">
+          <DataField>DonVi</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="SoLuong">
           <DataField>SoLuong</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SLNhap">
+          <DataField>SLNhap</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="SLBan">
@@ -44,7 +48,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\WindowsFormsApp\DataSet1.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Nguyen Cong Chi\Desktop\FashionShop\WindowsFormsApp\DataSet1.xsd</rd:SchemaPath>
         <rd:TableName>DataTable3</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -56,6 +60,40 @@
     <ReportSection>
       <Body>
         <ReportItems>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Cửa Hàng Thời Trang </Value>
+                    <Style>
+                      <FontFamily>Sitka Banner</FontFamily>
+                      <FontSize>13pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>Blue</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.12847in</Top>
+            <Left>0.12722in</Left>
+            <Height>0.33333in</Height>
+            <Width>1.91666in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
           <Textbox Name="Textbox7">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
@@ -63,7 +101,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Thống Kê Vaccine Trong Hệ  Thống </Value>
+                    <Value>Thống Kê Hàng Hóa Trong Cửa Hàng </Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>13pt</FontSize>
@@ -75,10 +113,43 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.48959in</Top>
-            <Left>4.82861in</Left>
+            <Top>0.84375in</Top>
+            <Left>1.66194in</Left>
             <Height>0.36111in</Height>
             <Width>3.0625in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox8">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>449/50 - Phường 12 - Quận 9 - Thành Phố Hồ Chí Minh </Value>
+                    <Style>
+                      <FontFamily>Cambria</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.42014in</Top>
+            <Left>0.12722in</Left>
+            <Height>0.25in</Height>
+            <Width>3.67834in</Width>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -93,62 +164,31 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.36921in</Width>
+                  <Width>0.90278in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.1956in</Width>
+                  <Width>1.34953in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.36921in</Width>
+                  <Width>0.68055in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.36921in</Width>
+                  <Width>0.8125in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.36921in</Width>
+                  <Width>0.80556in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.36921in</Width>
+                  <Width>0.77778in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.72917in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
                   <Height>0.57639in</Height>
                   <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox2">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>     Mã Vaccine</Value>
-                                  <Style>
-                                    <FontFamily>Sitka Banner</FontFamily>
-                                    <FontSize>11pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox2</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox4">
@@ -158,7 +198,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>     Tên Vaccine</Value>
+                                  <Value>Mã mặt hàng</Value>
                                   <Style>
                                     <FontFamily>Sitka Banner</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -192,7 +232,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>    Số lượng nhập</Value>
+                                  <Value>     Tên mặt hàng</Value>
                                   <Style>
                                     <FontFamily>Sitka Banner</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -226,7 +266,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>    Số lượng tồn</Value>
+                                  <Value>  Đơn vị </Value>
                                   <Style>
                                     <FontFamily>Sitka Banner</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -260,7 +300,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>      Số lượng bán</Value>
+                                  <Value>   SL Nhập </Value>
                                   <Style>
                                     <FontFamily>Sitka Banner</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -294,7 +334,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>          Giá bán</Value>
+                                  <Value>    SL Tồn</Value>
                                   <Style>
                                     <FontFamily>Sitka Banner</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -319,36 +359,27 @@
                         </Textbox>
                       </CellContents>
                     </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.57639in</Height>
-                  <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="MaVX1">
+                        <Textbox Name="Textbox16">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value xml:space="preserve">       </Value>
+                                  <Value>    SL Bán</Value>
                                   <Style>
-                                    <FontFamily>Cambria</FontFamily>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>=Fields!MaVX.Value</Value>
-                                  <Style>
-                                    <FontFamily>Cambria</FontFamily>
+                                    <FontFamily>Sitka Banner</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>MaVX1</rd:DefaultName>
+                          <rd:DefaultName>Textbox16</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -364,7 +395,46 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="TenVX1">
+                        <Textbox Name="Textbox18">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>   Giá bán</Value>
+                                  <Style>
+                                    <FontFamily>Sitka Banner</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.57639in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="MaMH">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -377,7 +447,7 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>=Fields!TenVX.Value</Value>
+                                  <Value>=Fields!MaMH.Value</Value>
                                   <Style>
                                     <FontFamily>Cambria</FontFamily>
                                   </Style>
@@ -386,7 +456,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>TenVX1</rd:DefaultName>
+                          <rd:DefaultName>MaMH</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -402,14 +472,90 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="SLNhap1">
+                        <Textbox Name="TenMH">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value xml:space="preserve">       </Value>
+                                  <Value xml:space="preserve">   </Value>
+                                  <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!TenMH.Value</Value>
+                                  <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>TenMH</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="DonVi">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value xml:space="preserve">  </Value>
+                                  <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!DonVi.Value</Value>
+                                  <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>DonVi</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="SLNhap">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value xml:space="preserve">   </Value>
                                   <Style>
                                     <FontFamily>Cambria</FontFamily>
                                   </Style>
@@ -424,7 +570,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>SLNhap1</rd:DefaultName>
+                          <rd:DefaultName>SLNhap</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -440,14 +586,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="SoLuong1">
+                        <Textbox Name="SoLuong">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value xml:space="preserve">         </Value>
+                                  <Value xml:space="preserve">   </Value>
                                   <Style>
                                     <FontFamily>Cambria</FontFamily>
                                   </Style>
@@ -462,7 +608,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>SoLuong1</rd:DefaultName>
+                          <rd:DefaultName>SoLuong</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -478,14 +624,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="SLBan1">
+                        <Textbox Name="SLBan">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value xml:space="preserve">             </Value>
+                                  <Value xml:space="preserve">    </Value>
                                   <Style>
                                     <FontFamily>Cambria</FontFamily>
                                   </Style>
@@ -500,7 +646,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>SLBan1</rd:DefaultName>
+                          <rd:DefaultName>SLBan</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -516,29 +662,31 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="GiaBan1">
+                        <Textbox Name="GiaBan">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value xml:space="preserve">             </Value>
+                                  <Value xml:space="preserve">   </Value>
                                   <Style>
                                     <FontFamily>Cambria</FontFamily>
+                                    <Format>#,0.0;(#,0.0)</Format>
                                   </Style>
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Fields!GiaBan.Value</Value>
                                   <Style>
                                     <FontFamily>Cambria</FontFamily>
+                                    <Format>#,0.0;(#,0.0)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>GiaBan1</rd:DefaultName>
+                          <rd:DefaultName>GiaBan</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -564,6 +712,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -577,11 +726,11 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.01611in</Top>
-            <Left>1.8071in</Left>
+            <Top>1.43277in</Top>
+            <Left>0.12722in</Left>
             <Height>1.15278in</Height>
-            <Width>9.04167in</Width>
-            <ZIndex>1</ZIndex>
+            <Width>6.05787in</Width>
+            <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -589,59 +738,8 @@
               </Border>
             </Style>
           </Tablix>
-          <Textbox Name="Textbox8">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Hệ thống tiêm chủng </Value>
-                    <Style>
-                      <FontFamily>Cambria</FontFamily>
-                      <FontSize>13pt</FontSize>
-                      <Color>DarkBlue</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>VNVC </Value>
-                    <Style>
-                      <FontFamily>Cambria</FontFamily>
-                      <FontSize>13pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <Color>DarkBlue</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>(Thuộc công ty cổ phần Việt Nam) </Value>
-                    <Style>
-                      <FontFamily>Cambria</FontFamily>
-                      <FontSize>13pt</FontSize>
-                      <Color>DarkBlue</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.19792in</Top>
-            <Left>3.8777in</Left>
-            <Height>0.29167in</Height>
-            <Width>4.91581in</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>7.09028in</Height>
+        <Height>5.43056in</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -649,7 +747,7 @@
           <BackgroundColor>White</BackgroundColor>
         </Style>
       </Body>
-      <Width>12.22676in</Width>
+      <Width>6.26148in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

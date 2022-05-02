@@ -25,12 +25,6 @@ namespace WindowsFormsApp
 
         }
 
-
-
-
-
-
-        FormTrangChu f = new FormTrangChu();
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string tenDangNhap = txtTenDangNhap.Text;
@@ -98,7 +92,17 @@ namespace WindowsFormsApp
             lblCanhBao.Text = "";
         }
 
-       
+        private void chkHienThiMK_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (chkHienThiMK.Checked == true)
+            {
+                txtMatKhau.PasswordChar = '\0';
+            }
+            else
+                txtMatKhau.PasswordChar = '*';
+        }
+
         private void lblBanQuenMK_Click(object sender, EventArgs e)
         {
             FormSDT f = new FormSDT();
@@ -106,14 +110,9 @@ namespace WindowsFormsApp
             this.Hide();
         }
 
-        private void chkHienThiMK_CheckedChanged(object sender, EventArgs e)
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            if (chkHienThiMK.Checked == true)
-            {
-                txtMatKhau.PasswordChar = '\0';
-            }
-            else
-                txtMatKhau.PasswordChar = '*';
+            Application.Exit();      
         }
     }
 }

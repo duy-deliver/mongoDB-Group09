@@ -139,9 +139,9 @@ namespace WindowsFormsApp
             else
             {
                 int k;
-                k = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][0].ToString().Substring(3, 3));
-                ma = "NCC";             
-               // k = dt.Rows.Count;
+                ma = "NCC";
+                //k = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][0].ToString().Substring(2, 3));
+                k = dt.Rows.Count;
                 k++;
                 if (k < 10)
                 {
@@ -215,7 +215,20 @@ namespace WindowsFormsApp
             }
         }
 
-     
+        private void dgvNCC_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexx;
+            indexx = e.RowIndex;
+            txtMaKH.Text = dgvNCC.Rows[indexx].Cells[0].Value.ToString();
+            txtKH.Text = dgvNCC.Rows[indexx].Cells[1].Value.ToString();
+             txtDiachi.Text = dgvNCC.Rows[indexx].Cells[3].Value.ToString();
+            txtSĐT.Text = dgvNCC.Rows[indexx].Cells[2].Value.ToString();
+            txtEmail.Text = dgvNCC.Rows[indexx].Cells[4].Value.ToString();
+            txtKH.ForeColor = Color.Black;
+            txtSĐT.ForeColor = Color.Black;
+            txtEmail.ForeColor = Color.Black;
+            txtDiachi.ForeColor = Color.Black;
+        }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
@@ -242,21 +255,6 @@ namespace WindowsFormsApp
             {
                 HienThi();
             }
-        }
-
-        private void dgvNCC_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            int indexx;
-            indexx = e.RowIndex;
-            txtMaKH.Text = dgvNCC.Rows[indexx].Cells[0].Value.ToString();
-            txtKH.Text = dgvNCC.Rows[indexx].Cells[1].Value.ToString();
-            txtDiachi.Text = dgvNCC.Rows[indexx].Cells[3].Value.ToString();
-            txtSĐT.Text = dgvNCC.Rows[indexx].Cells[2].Value.ToString();
-            txtEmail.Text = dgvNCC.Rows[indexx].Cells[4].Value.ToString();
-            txtKH.ForeColor = Color.Black;
-            txtSĐT.ForeColor = Color.Black;
-            txtEmail.ForeColor = Color.Black;
-            txtDiachi.ForeColor = Color.Black;
         }
     }
 }
