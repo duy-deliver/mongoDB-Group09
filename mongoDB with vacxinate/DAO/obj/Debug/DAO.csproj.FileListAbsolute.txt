@@ -141,4 +141,3 @@ D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\Syst
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Security.Principal.Windows.xml
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Text.Encoding.CodePages.xml
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\Guna.UI2.dll
-D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.csproj.CopyComplete
