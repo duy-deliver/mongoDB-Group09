@@ -5,8 +5,8 @@ namespace DTO
     public class MatHangDTO
     {
  
-        private string maVX, tenVX;
-       
+        private string maMH, tenMH, donVi;
+        private int soLuong, giaBan;
 
         public MatHangDTO()
         {
@@ -14,13 +14,18 @@ namespace DTO
         }
         public MatHangDTO(DataRow row)
         {
-            this.MaVX = row["MaVX"].ToString();
-            this.TenVX = row["TenVX"].ToString();
-           
+            this.MaMH = row["MaMH"].ToString();
+            this.TenMH = row["TenMH"].ToString();
+            this.DonVi = row["DonVi"].ToString();
+            this.GiaBan = (int)row["GiaBan"];
+            this.SoLuong = (int)row["SoLuong"];
         }
 
-        public string MaVX { get => maVX; set => maVX = value; }
-        public string TenVX { get => tenVX; set => tenVX = value; }
+        public string MaMH { get => maMH; set => maMH = value; }
+        public string TenMH { get => tenMH; set => tenMH = value; }
+        public string DonVi { get => donVi; set => donVi = value; }
+        public int SoLuong { get => soLuong; set => soLuong = value; }
+        public int GiaBan { get => giaBan; set => giaBan = value; }
     }
 }
 

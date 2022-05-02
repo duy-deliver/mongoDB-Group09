@@ -93,12 +93,6 @@ namespace BUS
         {
             return NhanVienDAO.Intance.CapLaiMK(id);
         }
-
-
-        public DataTable TKNhanVien()
-        {
-            return NhanVienDAO.Intance.TKNhanVien();
-        }
     }
 }
 

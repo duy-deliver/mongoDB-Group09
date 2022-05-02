@@ -74,7 +74,6 @@ namespace WindowsFormsApp
             }
         }
 
-
         private void txtDiachi_Enter(object sender, EventArgs e)
         {
             if (txtDiachi.Text == "Nhập địa chỉ")
@@ -83,7 +82,6 @@ namespace WindowsFormsApp
                 txtDiachi.ForeColor = Color.Black;
             }
         }
-
 
         private void txtDiachi_Leave(object sender, EventArgs e)
         {
@@ -138,7 +136,24 @@ namespace WindowsFormsApp
             dgvNV.DataSource = dt;
         }
 
-      
+        private void dgvNV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexx;
+            indexx = e.RowIndex;
+            txtKH.Text = dgvNV.Rows[indexx].Cells[1].Value.ToString();
+            txtMaNV.Text = dgvNV.Rows[indexx].Cells[0].Value.ToString();
+            cmbGioiTinh.Text = dgvNV.Rows[indexx].Cells[2].Value.ToString();
+            txtDiachi.Text = dgvNV.Rows[indexx].Cells[3].Value.ToString();
+            txtSĐT.Text = dgvNV.Rows[indexx].Cells[4].Value.ToString();
+            cmbChucVu.Text = dgvNV.Rows[indexx].Cells[5].Value.ToString();
+            txtKH.ForeColor = Color.Black;
+            txtDiachi.ForeColor = Color.Black;
+            txtMaNV.ForeColor = Color.Black;
+            txtEmail.ForeColor = Color.Black;
+            txtSĐT.ForeColor = Color.Black;
+            cmbGioiTinh.ForeColor = Color.Black;
+            cmbChucVu.ForeColor = Color.Black;
+        }
 
 
         private void addUC(UserControl uc)
@@ -251,30 +266,6 @@ namespace WindowsFormsApp
             {
                 HienThi();
             }
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvNV_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            int indexx;
-            indexx = e.RowIndex;
-            txtKH.Text = dgvNV.Rows[indexx].Cells[1].Value.ToString();
-            txtMaNV.Text = dgvNV.Rows[indexx].Cells[0].Value.ToString();
-            cmbGioiTinh.Text = dgvNV.Rows[indexx].Cells[2].Value.ToString();
-            txtDiachi.Text = dgvNV.Rows[indexx].Cells[3].Value.ToString();
-            txtSĐT.Text = dgvNV.Rows[indexx].Cells[4].Value.ToString();
-            cmbChucVu.Text = dgvNV.Rows[indexx].Cells[5].Value.ToString();
-            txtKH.ForeColor = Color.Black;
-            txtDiachi.ForeColor = Color.Black;
-            txtMaNV.ForeColor = Color.Black;
-            txtEmail.ForeColor = Color.Black;
-            txtSĐT.ForeColor = Color.Black;
-            cmbGioiTinh.ForeColor = Color.Black;
-            cmbChucVu.ForeColor = Color.Black;
         }
     }
 }

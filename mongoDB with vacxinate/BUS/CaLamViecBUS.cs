@@ -36,9 +36,9 @@ namespace BUS
         }
 
 
-        public bool themCLV(string maNV, string maCLV, DateTime ngaybt, DateTime ngaykt)
+        public bool themCLV(string maNV, string maCLV, DateTime ngaylam)
         {
-            return CaLamViecDAO.Intance.themCLV(maNV, maCLV, ngaybt, ngaykt);
+            return CaLamViecDAO.Intance.themCLV(maNV, maCLV, ngaylam);
         }
 
 
@@ -54,9 +54,9 @@ namespace BUS
         }
 
 
-        public bool xoaCLV(string maNV, DateTime bd, DateTime kt)
+        public bool xoaCLV(string maNV, DateTime nl)
         {
-            return CaLamViecDAO.Intance.xoaCLV(maNV, bd,kt);
+            return CaLamViecDAO.Intance.xoaCLV(maNV, nl);
         }
 
 
@@ -71,16 +71,5 @@ namespace BUS
         {
             return CaLamViecDAO.Intance.suaCLV(maclv, maNV, nl);
         }
-
-
-        public DataTable TimkiemCLV(string mk)
-        {
-            return CaLamViecDAO.Intance.TimkiemCLV(mk);
-        }
-
-        public DataTable Timkiem(string mk)
-        {
-            return CaLamViecDAO.Intance.Timkiem(mk);
-        }
-        }
+    }
 }
