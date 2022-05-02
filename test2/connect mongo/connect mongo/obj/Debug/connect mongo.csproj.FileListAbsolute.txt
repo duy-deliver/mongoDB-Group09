@@ -43,3 +43,4 @@ D:\ForStudy\PJ\QuanTri\mongoDB-Group09\test2\connect mongo\connect mongo\bin\Deb
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\test2\connect mongo\connect mongo\bin\Debug\Newtonsoft.Json.xml
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\test2\connect mongo\connect mongo\bin\Debug\MongoDB.Driver.Legacy.dll
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\test2\connect mongo\connect mongo\bin\Debug\MongoDB.Driver.Legacy.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\test2\connect mongo\connect mongo\bin\Debug\FastMember.dll

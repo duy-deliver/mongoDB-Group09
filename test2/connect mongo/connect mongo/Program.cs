@@ -254,8 +254,11 @@ namespace connect_mongo
         static void Main(string[] args)
         {
 
-            MongoC();
+            //MongoC();
             //SqlLike();
+
+            VacXinDAO vx = new VacXinDAO();
+            vx.getListSanPham();
 
             Console.ReadKey();
         }
