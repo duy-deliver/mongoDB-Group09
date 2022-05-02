@@ -46,11 +46,27 @@ C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DTO\obj\Debug\DTO.csproj.GenerateRe
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DTO\obj\Debug\DTO.dll
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DTO\obj\Debug\DTO.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\bin\Debug\DTO.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\bin\Debug\DTO.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.Properties.Resources.resources
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\DTO\obj\Debug\DTO.pdb
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DTO\bin\Debug\DTO.dll
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DTO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DTO\obj\Debug\DTO.dll
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DTO\obj\Debug\DTO.pdb
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\bin\Debug\DTO.dll
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\obj\Debug\DTO.dll
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DTO\obj\Debug\DTO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\bin\Debug\DTO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\bin\Debug\DTO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.Properties.Resources.resources
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DTO\obj\Debug\DTO.pdb

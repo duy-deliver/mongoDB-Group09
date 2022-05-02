@@ -19,8 +19,8 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
             DateTime today = DateTime.Now;
-            dpkNgaybd.Value = new DateTime(today.Year - 1, today.Month - 10, 1);
-            dpkNgaykt.Value = dpkNgaybd.Value.AddYears(1).AddMonths(11).AddDays(-1);
+            dpkNgaybd.Value = new DateTime(today.Year - 1, today.Month, 1);
+            dpkNgaykt.Value = dpkNgaybd.Value.AddYears(1).AddMonths(12).AddDays(-1);
             ThucThi();
             TongtienHoadon();
             cmbLuaChon.SelectedIndex = 0;
@@ -127,6 +127,25 @@ namespace WindowsFormsApp
             DataTable dt = HoaDonBUS.Intance.TKHoaDon(ngaybd, ngaykt);
             dgvHd.DataSource = dt;
         }
+
+        private void btnXemChiTiet_Click(object sender, EventArgs e)
+        {
+            FormXemLaiHoaDon f = new FormXemLaiHoaDon(mahd);
+            f.Show();
+        }
+
+
+        private string mahd;
+      
+        private void dgvHd_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexx;
+            indexx = e.RowIndex;
+            mahd = dgvHd.Rows[indexx].Cells[0].Value.ToString();
+        }
+
+
+
     }
 
 }

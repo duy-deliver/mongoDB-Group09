@@ -62,26 +62,83 @@ C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DAO\obj\Debug\DAO.csproj.GenerateRe
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DAO\obj\Debug\DAO.dll
 C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DAO\obj\Debug\DAO.pdb
-C:\Users\Nguyen Cong Chi\Desktop\FashionShop\DAO\obj\Debug\DAO.csproj.CopyComplete
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\bin\Debug\DAO.dll
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\bin\Debug\DAO.pdb
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\bin\Debug\DTO.dll
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\bin\Debug\DTO.pdb
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.Properties.Resources.resources
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.csproj.CopyComplete
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.dll
-C:\Users\buiva\OneDrive\Máy tính\Source\Fashion_Shop-Chi\DAO\obj\Debug\DAO.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\bin\Debug\DAO.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\bin\Debug\DAO.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\bin\Debug\DTO.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\bin\Debug\DTO.pdb
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.Properties.Resources.resources
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.csproj.CopyComplete
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.dll
-C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.pdb
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DAO\bin\Debug\DAO.dll
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DAO\bin\Debug\DAO.pdb
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DAO\bin\Debug\DTO.dll
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DAO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DAO\obj\Debug\DAO.dll
+C:\Users\Nguyen Cong Chi\Documents\VaccinNation-VNVC\DAO\obj\Debug\DAO.pdb
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DAO\bin\Debug\DAO.dll
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DAO\bin\Debug\DAO.pdb
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DAO\bin\Debug\DTO.dll
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DAO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DAO\obj\Debug\DAO.dll
+C:\Users\Nguyen Cong Chi\Desktop\VaccinNation-VNVC\DAO\obj\Debug\DAO.pdb
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\bin\Debug\DAO.dll
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\bin\Debug\DAO.pdb
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\bin\Debug\DTO.dll
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\bin\Debug\DTO.pdb
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\obj\Debug\DAO.dll
+C:\Users\Admin\Desktop\vaccination-system-vnvc-master (1)\vaccination-system-vnvc-master\DAO\obj\Debug\DAO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DAO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DAO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DTO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DTO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.Properties.Resources.resources
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\libzstd.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\snappy32.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\snappy64.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\libsnappy64.so
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\libzstd.so
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\libsnappy64.dylib
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\libzstd.dylib
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\mongocrypt.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DAO.dll.config
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DnsClient.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\Microsoft.Win32.Registry.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\MongoDB.Bson.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\MongoDB.Driver.Core.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\MongoDB.Driver.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\Newtonsoft.Json.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\SharpCompress.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Buffers.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Memory.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Numerics.Vectors.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Security.AccessControl.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Security.Principal.Windows.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DnsClient.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\Microsoft.Win32.Registry.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\MongoDB.Bson.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\MongoDB.Driver.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\MongoDB.Driver.Core.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\Newtonsoft.Json.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Buffers.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Memory.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Numerics.Vectors.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Security.AccessControl.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Security.Principal.Windows.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\Guna.UI2.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.csproj.CopyComplete

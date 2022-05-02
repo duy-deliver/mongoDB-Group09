@@ -20,14 +20,101 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
             getDataChart();
-            getdataLable();
+            getDataChart1();
+          //  getdataLable();
             this.tennv = tennv;
-            lblTenNhanVien.Text = tennv;
-            HidesubMenu();
-            cmbTonKho.SelectedIndex = 0;
-            TopSP();
+        ///   lblTenNhanVien.Text = tennv;
+          //  HidesubMenu();
+         //   TopSP();
+         //   cmbTonKho.SelectedIndex = 0;
         }
 
+
+        private void getDataChart()
+        {
+            chart1.Titles.Clear();
+            string query = "select VacXin.MaVX as  [Mã Vaccine],VacXin.TenVX as N'Tên Vaccine',sum(ChitietPN.Soluong) as N'Số lượng nhập',VacXin.SoLuong as N'Số lượng tồn', (sum(ChitietPN.Soluong) - VacXin.SoLuong) as N'Số lượng bán' from VacXin inner join ChiTietPN on VacXin.MaVX = ChiTietPN.MaVX  group by VacXin.MaVX,VacXiN.SoLuong,VacXin.TenVX";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            chart1.DataSource = data;
+            chart1.Series["Số lượng nhập"].XValueMember = "Tên Vaccine";
+            chart1.Series["Số lượng nhập"].YValueMembers = "Số lượng nhập";
+            chart1.Series["Số lượng tồn"].XValueMember = "Tên Vaccine";
+            chart1.Series["Số lượng tồn"].YValueMembers = "Số lượng tồn";
+            chart1.Series["Số lượng bán"].XValueMember = "Tên Vaccine";
+            chart1.Series["Số lượng bán"].YValueMembers = "Số lượng bán";
+            chart1.Titles.Add("THỐNG KÊ VACCINE");
+            chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
+            chart1.ChartAreas[0].AxisX.Minimum = 0;
+            chart1.Series[0].ChartType = SeriesChartType.Column;
+        }
+
+
+
+        private void getDataChartChange()
+        {
+            string tk = txtTimkiem.Text; 
+            chart1.Titles.Clear();
+            string query = "select VacXin.MaVX as  [Mã Vaccine],VacXin.TenVX as N'Tên Vaccine',sum(ChitietPN.Soluong) as N'Số lượng nhập',VacXin.SoLuong as N'Số lượng tồn', (sum(ChitietPN.Soluong) - VacXin.SoLuong) as N'Số lượng bán' from VacXin inner join ChiTietPN on VacXin.MaVX = ChiTietPN.MaVX where VacXin.MaVX like '%" + tk + "%' or VacXin.TenVX like N'%" + tk + "%' group by VacXin.MaVX,VacXiN.SoLuong,VacXin.TenVX";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            chart1.DataSource = data;
+            chart1.Series["Số lượng nhập"].XValueMember = "Tên Vaccine";
+            chart1.Series["Số lượng nhập"].YValueMembers = "Số lượng nhập";
+            chart1.Series["Số lượng tồn"].XValueMember = "Tên Vaccine";
+            chart1.Series["Số lượng tồn"].YValueMembers = "Số lượng tồn";
+            chart1.Series["Số lượng bán"].XValueMember = "Tên Vaccine";
+            chart1.Series["Số lượng bán"].YValueMembers = "Số lượng bán";
+            chart1.Titles.Add("THỐNG KÊ VACCINE");
+            chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
+            chart1.ChartAreas[0].AxisX.Minimum = 0;
+            chart1.Series[0].ChartType = SeriesChartType.Column;
+        }
+
+
+
+        
+
+        private void getDataChart1()
+        {
+            chart2.Titles.Clear();
+            DateTime today = DateTime.Now;
+            DateTime bd = new DateTime(2021,1, 1);
+            DateTime kt = bd.AddYears(1).AddMonths(11).AddDays(-1);
+            string query = "EXEC USP_ThongKeDoanhThuTrongThang @ngaybd , @ngaykt";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { bd, kt });
+            chart2.DataSource = data;
+            chart2.Series["Doanh Thu"].XValueMember = "NGAY";
+            chart2.Series["Doanh Thu"].YValueMembers = "TongTien";
+            chart2.Titles.Add("THỐNG KÊ DOANH THU");
+            chart2.Series["Doanh Thu"].Color = System.Drawing.Color.FromArgb(0, 35, 149);
+            //chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
+            //chart1.ChartAreas[0].AxisX.Minimum = 0;
+            //chart1.Series[0].ChartType = SeriesChartType.Column;
+        } 
+
+        private void txtTimkiem_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtTimkiem.Text))
+            {
+                getDataChartChange();
+            }
+            else
+                getDataChart();
+
+
+            
+        }
+
+        private void txtTimkiem_Click(object sender, EventArgs e)
+        {
+            txtTimkiem.Text = "";
+            txtTimkiem.ForeColor = Color.Black;
+        }
+
+      
+
+
+
+        /*
         private void getdataLable()
         {
             string tkKH = "select count(*) AS [SoLuong] from KhachHang";
@@ -47,6 +134,8 @@ namespace WindowsFormsApp
             int doanhthu = Int32.Parse(kh.Rows[0]["Doanh thu"].ToString());
 
             lblDoanhthu.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", doanhthu) + " đ";
+
+
 
             tkKH = "select count(SoLuong) as [Duoidinhmuc] from MatHang Where SoLuong <= 50";
             kh = DataProvider.Instance.ExecuteQuery(tkKH);
@@ -71,6 +160,7 @@ namespace WindowsFormsApp
                 int giatri = Int32.Parse(kh.Rows[0]["giatri"].ToString());
                 lblGiatri.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", giatri) + " đ";
             }
+
         }
 
         private void getDataChart()
@@ -91,129 +181,11 @@ namespace WindowsFormsApp
             //chart1.Series[0].ChartType = SeriesChartType.Column;
         }
 
-        DateTime today = DateTime.Now;
-        private void TopSP()
+        private void lblTenNhanVien_Click(object sender, EventArgs e)
         {
-
-            DateTime ngbd = new DateTime(today.Year, 1, 1);
-            DateTime ngkt = new DateTime(today.Year, 12, 30);
-            string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
-            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-            if (dt.Rows.Count >= 4)
-            {
-                lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
-                lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
-                lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
-                lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
-                lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
-                lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
-            }
+            showsubMenu(pnlTTTaiKhoan);
         }
 
-        private void cmbTonKho_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbTonKho.Text == "Hôm nay")
-            {
-                DateTime ngbd = new DateTime(today.Year, today.Month, today.Day);
-                DateTime ngkt = new DateTime(today.Year, today.Month, today.Day);
-                string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
-                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-                if (dt.Rows.Count >= 4)
-                {
-                    lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
-                    lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
-                    lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
-                    lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
-                    lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
-                    lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
-                }
-                else
-
-                    LamMoi();
-
-
-            }
-            else if (cmbTonKho.Text == "Hôm qua")
-            {
-                DateTime ngbd = new DateTime(today.Year, today.Month, today.Day - 1);
-                DateTime ngkt = new DateTime(today.Year, today.Month, today.Day - 1);
-                string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
-                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-                if (dt.Rows.Count >= 4)
-                {
-                    lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
-                    lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
-                    lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
-                    lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
-                    lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
-                    lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
-                }
-                else
-
-                    LamMoi();
-
-
-            }
-            else if (cmbTonKho.Text == "Tuần này")
-            {
-                DateTime ngbd = new DateTime(today.Year, today.Month, today.Day);
-                DateTime ngkt = new DateTime(today.Year, today.Month, today.Day + 7);
-                string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
-                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-                if (dt.Rows.Count >= 4)
-                {
-                    lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
-                    lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
-                    lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
-                    lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
-                    lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
-                    lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
-                }
-                else
-
-                    LamMoi();
-
-
-            }
-            else if (cmbTonKho.Text == "Tháng này")
-            {
-                DateTime ngbd = new DateTime(today.Year, today.Month, 1);
-                DateTime ngkt = new DateTime(today.Year, today.Month, 30);
-                string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
-                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-                if (dt.Rows.Count >= 4)
-                {
-                    lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
-                    lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
-                    lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
-                    lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
-                    lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
-                    lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
-                }
-                else
-
-                    LamMoi();
-
-            }
-            else if (cmbTonKho.Text == "Năm nay")
-            {
-                TopSP();
-            }
-        }
-        private void LamMoi()
-        {
-            lblSPTOP1.Text = "";
-            lblsanpham.Text = "";
-            lbltop2.Text = "";
-            lblsltop2.Text = "";
-            lbltop3.Text = "";
-            lblsltop3.Text = "";
-            labeltop1.Text = "";
-            labeltop2.Text = "";
-            labeltop3.Text = "";
-        }
-
-       
 
         private void addUC(UserControl uc)
         {
@@ -222,6 +194,13 @@ namespace WindowsFormsApp
             panel1.Controls.Add(uc);
             uc.BringToFront();
         }
+
+        private void btnTK_Click(object sender, EventArgs e)
+        {
+            UC_ThongTinhTaiKhoan f = new UC_ThongTinhTaiKhoan(lblTenNhanVien.Text);
+            addUC(f);
+        }
+
 
         private void HidesubMenu()
         {
@@ -243,42 +222,140 @@ namespace WindowsFormsApp
                 subMenu.Visible = false;
         }
 
-        private void lblTenNhanVien_Click(object sender, EventArgs e)
-        {
-            showsubMenu(pnlTTTaiKhoan);
-        }
 
-        private void btnTK_Click(object sender, EventArgs e)
-        {
-            UC_ThongTinhTaiKhoan f = new UC_ThongTinhTaiKhoan(lblTenNhanVien.Text);
-            addUC(f);
-        }
 
-        private void btnDangXuat_Click(object sender, EventArgs e)
-        {
-            FormLogin f = new FormLogin();
-            f.Show();
-            this.Hide();
-        }
-
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        DateTime today = DateTime.Now;
+        private void TopSP()
         {
 
+            DateTime ngbd = new DateTime(today.Year, 1, 1);
+            DateTime ngkt = new DateTime(today.Year, 12, 31);
+            string query = "select top 3 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            if (dt.Rows.Count >= 3)
+            {
+                lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
+                lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
+                lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
+                lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
+                lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
+                lblsltop3.Text = dt.Rows[2]["Top 1"].ToString(); 
+            }
         }
 
-        private void labeltop2_Click(object sender, EventArgs e)
+        private void cmbTonKho_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbTonKho.Text == "Hôm nay")
+            {
+                DateTime ngbd = new DateTime(today.Year, today.Month, today.Day);
+                DateTime ngkt = new DateTime(today.Year, today.Month, today.Day);
+                string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
+                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+                if (dt.Rows.Count >= 3)
+                {
+                    lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
+                    lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
+                    lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
+                    lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
+                    lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
+                    lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
+                 
+                 
 
+                }
+                else
+
+                    LamMoi();
+
+
+            }
+            else if (cmbTonKho.Text == "Hôm qua")
+            {
+                DateTime ngbd = new DateTime(today.Year, today.Month, today.Day - 1);
+                DateTime ngkt = new DateTime(today.Year, today.Month, today.Day - 1);
+                string query = "select top 3 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
+                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+                if (dt.Rows.Count >= 3)
+                {
+                    lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
+                    lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
+                    lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
+                    lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
+                    lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
+                    lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
+                   
+                }
+                else
+                    LamMoi();
+
+
+            }
+            else if (cmbTonKho.Text == "Tuần này")
+            {
+                DateTime ngbd = new DateTime(today.Year, today.Month, today.Day);
+                DateTime ngkt = new DateTime(today.Year, 1, 3);
+                string query = "select top 3 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
+                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+                if (dt.Rows.Count >= 3)
+                {
+                    lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
+                    lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
+                    lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
+                    lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
+                    lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
+                    lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
+                 
+
+                }
+                else
+
+                    LamMoi();
+
+
+            }
+            else if (cmbTonKho.Text == "Tháng này")
+            {
+                DateTime ngbd = new DateTime(today.Year, today.Month, 1);
+                DateTime ngkt = new DateTime(today.Year, today.Month, 30);
+                string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
+                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+                if (dt.Rows.Count >= 3)
+                {
+                    lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
+                    lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
+                    lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
+                    lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
+                    lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
+                    lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
+                  
+
+                }
+                else
+
+                    LamMoi();
+
+            }
+            else if (cmbTonKho.Text == "Năm nay")
+            {
+                TopSP();
+            }
         }
 
-        private void labeltop1_Click(object sender, EventArgs e)
+
+        private void LamMoi()
         {
+            lblSPTOP1.Text = "";
+            lblsanpham.Text = "";
+            lbltop2.Text = "";
+            lblsltop2.Text = "";
+            lbltop3.Text = "";
+            lblsltop3.Text = "";
+           
+            labeltop1.Text = "";
+            labeltop2.Text = "";
+            labeltop3.Text = "";
+        
+        } */
 
-        }
-
-        private void labeltop3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
