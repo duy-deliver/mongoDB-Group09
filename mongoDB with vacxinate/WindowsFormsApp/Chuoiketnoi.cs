@@ -7,7 +7,8 @@ namespace WindowsFormsApp
         string str;
         public Chuoiketnoi()
         {
-            str = @"Data Source=minhho;Initial Catalog=[HeThongTiemChung];Integrated Security=True";
+            str = @"Data Source=.;Initial Catalog=HeThongTiemChung;Integrated Security=True";
+
         }
 
         public SqlConnection sqlConnection()

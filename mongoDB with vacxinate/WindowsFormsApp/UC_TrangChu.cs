@@ -95,9 +95,13 @@ namespace WindowsFormsApp
         private void TopSP()
         {
 
-            DateTime ngbd = new DateTime(today.Year, 1, 1);
-            DateTime ngkt = new DateTime(today.Year, 12, 30);
-            string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
+            //DateTime ngbd = new DateTime(today.Year, 1, 1);
+            //DateTime ngkt = new DateTime(today.Year, 12, 30);
+            //Console.WriteLine(ngbd);
+            //Console.WriteLine(ngkt);
+            //Console.WriteLine(ngbd.GetType());
+            //where NgayTao between '" + ngbd + "' and '" + ngkt + "'
+            string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             if (dt.Rows.Count >= 4)
             {
