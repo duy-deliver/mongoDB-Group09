@@ -28,9 +28,9 @@ namespace WindowsFormsApp
             //cmbCalamviec.ValueMember = "Ca";
             //LamMoi();
 
-            cmbTennv.SelectedIndex = 0;
-            cmbCalamviec.SelectedIndex = 0;
-            //cmbLuaChon.SelectedIndex = 0;
+            cmbTenNV.SelectedIndex = 0;
+            cmbCLV.SelectedIndex = 0;
+            cmbLuaChon.SelectedIndex = 0;
         }
 
 
@@ -40,124 +40,92 @@ namespace WindowsFormsApp
             dgvGC.DataSource = dt;
         }
 
-        private void cmbTenNV_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            list = NhanVienBUS.Intance.getListNhanVien();
-            cmbTennv.DataSource = list;
-            cmbTennv.DisplayMember = "TenHienThi";
-            cmbTennv.ValueMember = "TenHienThi";
-        }
-
-
-        List<NhanVienDTO> list;
-
-        private void cmbCLV_Click(object sender, EventArgs e)
-        {
-            list1 = CaLamViecBUS.Intance.getListCalamviec();
-            cmbCalamviec.DataSource = list1;
-            cmbCalamviec.DisplayMember = "Ca";
-            cmbCalamviec.ValueMember = "Ca";
-        }
-
-
-        List<CaLamViecDTO> list1;
-
-
-        private string temp;
-        private string temp1;
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            DataTable dt = NhanVienBUS.Intance.getTTNV(cmbTennv.Text);
-            DataTable dt1 = CaLamViecBUS.Intance.TimkiemMCLV(cmbCalamviec.Text);
-            if (dt.Rows.Count > 0 && dt1.Rows.Count > 0)
-            {
-                temp = dt.Rows[0]["MaNV"].ToString();
-                temp1 = dt1.Rows[0]["MaCLV"].ToString();
-                DataTable dt2 = CaLamViecBUS.Intance.TimkiemCLV(temp);
-                if (dt2.Rows.Count > 0)
-                {
-                    DateTime Ngaykt = Convert.ToDateTime(dt2.Rows[0]["NgayKT"].ToString());
-                    string temp2 = dt2.Rows[0]["MaCLV"].ToString();
-                    if (dtpNgaybd.Value <= Ngaykt && temp2 == temp1)
-                    {
-                        MessageBox.Show("Ca làm việc nhân viên đã tồn tại, Bạn không thể thêm mới!", "Thông báo");
-                    }
-                    else if (CaLamViecBUS.Intance.themCLV(temp1, temp, dtpNgaybd.Value, dtpNgaykt.Value))
-                    {
-                        MessageBox.Show("Thêm thành công", "Thông báo");
-                        Hienthi();
-                        //LamMoi();
-                    }
-
-                }
-                else
-                {
-                    if (CaLamViecBUS.Intance.themCLV(temp1, temp, dtpNgaybd.Value, dtpNgaykt.Value))
-                    {
-                        MessageBox.Show("Thêm thành công", "Thông báo");
-                        Hienthi();
-                        //LamMoi();
-                    }
-                }
-            }
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-           
-            
-               
-                if (CaLamViecBUS.Intance.xoaCLV(lblMNV.Text, dtpNgaybd.Value,dtpNgaykt.Value))
-                {
-                    MessageBox.Show("Xóa thành công", "Thông báo");
-                    Hienthi();
-                   
-                }else
-                   MessageBox.Show("Không thể xóa", "Thông báo");
-        }
-        
-
-   
-
-        private void txtTimkiem_Click(object sender, EventArgs e)
-        {
-            txtTimkiem.Text = "";
-            txtTimkiem.ForeColor = Color.Black;
 
         }
+        /*
+List<NhanVienDTO> list;
+List<CaLamViecDTO> list1;
 
-        private void txtTimkiem_TextChanged(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(txtTimkiem.Text))
-            {
-                DataTable dt = CaLamViecBUS.Intance.Timkiem(txtTimkiem.Text);
-                dgvGC.DataSource = dt;
-            }
-            else
-                Hienthi();
+private void dgvCalamviec_CellContentClick(object sender, DataGridViewCellEventArgs e)
+{
+int indexx;
+indexx = e.RowIndex;
+cmbCalamviec.Text = dgvCalamviec.Rows[indexx].Cells[2].Value.ToString();
+cmbTennv.Text = dgvCalamviec.Rows[indexx].Cells[1].Value.ToString();
+dpkNgayban.Value = Convert.ToDateTime(dgvCalamviec.Rows[indexx].Cells[3].Value.ToString());
+}
 
 
-            if(txtTimkiem.Text == "Tìm kiếm theo mã, tên nhân viên")
-            {
-                Hienthi();
-            }
-        }
 
-        private void txtTimkiem_Leave(object sender, EventArgs e)
-        {
-            txtTimkiem.Text = "Tìm kiếm theo mã, tên nhân viên";
-            txtTimkiem.ForeColor = Color.Silver;
-        }
+private void btnThem_Click(object sender, EventArgs e)
+{
+if (CaLamViecBUS.Intance.themCLV(maclv, manv, dpkNgayban.Value))
+{
+   MessageBox.Show("Thêm thành công", "Thông báo");
+   Hienthi();
+   LamMoi();
+}
+}
 
-        private void dgvGC_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            int indexx;
-            indexx = e.RowIndex;
-            lblMNV.Text = dgvGC.Rows[indexx].Cells[0].Value.ToString();
-            cmbCalamviec.Text = dgvGC.Rows[indexx].Cells[2].Value.ToString();
-            cmbTennv.Text = dgvGC.Rows[indexx].Cells[1].Value.ToString();
-            dtpNgaybd.Value = Convert.ToDateTime(dgvGC.Rows[indexx].Cells[3].Value.ToString());
-            dtpNgaykt.Value = Convert.ToDateTime(dgvGC.Rows[indexx].Cells[4].Value.ToString());
-        }
+
+
+private void btnXoa_Click(object sender, EventArgs e)
+{
+DataTable dt = CaLamViecBUS.Intance.TimkiemMaNgaylam(cmbTennv.Text, dpkNgayban.Value);
+
+if (dt.Rows.Count > 0)
+{
+string manv = dt.Rows[0]["MaNV"].ToString();
+DateTime nl = Convert.ToDateTime(dt.Rows[0]["NgayLam"].ToString());
+if (CaLamViecBUS.Intance.xoaCLV(manv, dpkNgayban.Value))
+{
+   MessageBox.Show("Xóa thành công", "Thông báo");
+   Hienthi();
+   LamMoi();
+}
+}
+}
+
+
+
+string manv;
+private void cmbTennv_SelectedIndexChanged(object sender, EventArgs e)
+{
+DataTable dt = CaLamViecBUS.Intance.TimkiemMNV(cmbTennv.Text);
+if (dt.Rows.Count > 0)
+{
+manv = dt.Rows[0]["MaNV"].ToString();
+}
+}
+
+
+string maclv;
+private void cmbCalamviec_SelectedIndexChanged(object sender, EventArgs e)
+{
+DataTable dt1 = CaLamViecBUS.Intance.TimkiemMCLV(cmbCalamviec.Text);
+if (dt1.Rows.Count > 0)
+{
+maclv = dt1.Rows[0]["MaCLV"].ToString();
+}
+}
+
+
+private void LamMoi()
+{
+cmbTennv.SelectedIndex = -1;
+cmbCalamviec.SelectedIndex = -1;
+}
+
+private void btnSua_Click(object sender, EventArgs e)
+{
+if (CaLamViecBUS.Intance.suaCLV(maclv, manv, dpkNgayban.Value))
+{
+MessageBox.Show("Sửa thành công");
+Hienthi();
+LamMoi();
+}
+} */
     }
 }
