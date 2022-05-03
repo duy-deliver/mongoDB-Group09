@@ -32,4 +32,11 @@ namespace connect_mongo
         public object Anh { get; set; }
     }
 
+    public class ChiTietPN
+    {
+        public string MaPN { get; set; }
+        public string MaMH { get; set; }
+        public int SoLuong { get; set; }
+        public double DonGia { get; set; }
+    }
 }

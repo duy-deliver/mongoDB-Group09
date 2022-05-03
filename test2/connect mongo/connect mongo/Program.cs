@@ -255,11 +255,15 @@ namespace connect_mongo
         {
 
             //MongoC();
-            SqlLike();
+            //SqlLike();
 
             VacXinDAO vx = new VacXinDAO();
             //vx.getListSanPham();
-            vx.LuuHH("VX034", "Vtra 0.5ml", "lọ ", 5, 4, "LH002");
+            //vx.LuuHH("VX034", "Vtra 0.5ml", "lọ ", 5, 4, "LH002");
+            vx.UpdateSoLuongMHSauNhap("VX002", 69);
+
+            ChiTietPNDAO ctpn = new ChiTietPNDAO();
+            //ctpn.LuuChitietPN("PN009", "VX007", 3, 135000);
 
             Console.ReadKey();
         }

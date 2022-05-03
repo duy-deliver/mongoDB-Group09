@@ -137,6 +137,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietPNDAO.cs" />
     <Compile Include="CollectionObjects.cs" />
     <Compile Include="MongoConnect.cs" />
     <Compile Include="Program.cs" />

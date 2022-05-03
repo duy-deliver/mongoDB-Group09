@@ -45,5 +45,35 @@ namespace connect_mongo
 
             return true;
         }
+        public bool UpdateSoLuongMH(string mahh, int sl)
+        {
+            // Convert datetime to date SQL Server 
+            var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+
+            var result = collection.UpdateOneAsync(
+                filter: w => w.MaMH == mahh,
+                update: Builders<MatHang>.Update.Set(m => m.SoLuong, sl));
+
+            Console.WriteLine(result);
+            return true;
+        }
+        public bool UpdateSoLuongMHSauNhap(string mahh, int sl)
+        {
+            // Convert datetime to date SQL Server 
+            var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+
+            var slcur = collection.AsQueryable()
+                .Where(w => w.MaMH == mahh)
+                .Select(w => w.SoLuong)
+                .FirstOrDefault();
+                
+            var result = collection.UpdateOneAsync(
+                filter: w => w.MaMH == mahh,
+                update: Builders<MatHang>.Update.Set(m => m.SoLuong, slcur + sl));
+
+            Console.WriteLine(result);
+            return true;
+        }
+
     }
 }
