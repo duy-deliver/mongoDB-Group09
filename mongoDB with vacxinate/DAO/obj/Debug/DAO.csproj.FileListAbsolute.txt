@@ -85,3 +85,13 @@ C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.csproj.Cor
 C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.dll
 C:\Users\USER\Downloads\fashion-shop-manager-master\DAO\obj\Debug\DAO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DAO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DAO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DTO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\bin\Debug\DTO.pdb
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.Properties.Resources.resources
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.dll
+D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\DAO\obj\Debug\DAO.pdb
