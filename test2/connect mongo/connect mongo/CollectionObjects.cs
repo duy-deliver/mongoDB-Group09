@@ -20,6 +20,16 @@ namespace connect_mongo
         public string MaLoai { get; set; }
         public string NuocSX { get; set; }
     }
-
+    public class MatHang
+    {
+        public string _id { get; set; }
+        public string MaMH { get; set; }
+        public string TenMH { get; set; }
+        public string DonVi { get; set; }
+        public int GiaBan { get; set; }
+        public int SoLuong { get; set; }
+        public string MaLH { get; set; }
+        public object Anh { get; set; }
+    }
 
 }

@@ -34,7 +34,7 @@ class MongoConnect
     public MongoConnect()
     {
         MongoClient dbClient = new MongoClient("mongodb://sa:root@localhost:27017");
-        database = dbClient.GetDatabase("test");
+        database = dbClient.GetDatabase("HeThongTiemChung");
         //col = collection.Find("hello");
     }
 

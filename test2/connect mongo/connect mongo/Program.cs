@@ -255,10 +255,11 @@ namespace connect_mongo
         {
 
             //MongoC();
-            //SqlLike();
+            SqlLike();
 
             VacXinDAO vx = new VacXinDAO();
-            vx.getListSanPham();
+            //vx.getListSanPham();
+            vx.LuuHH("VX034", "Vtra 0.5ml", "lọ ", 5, 4, "LH002");
 
             Console.ReadKey();
         }
