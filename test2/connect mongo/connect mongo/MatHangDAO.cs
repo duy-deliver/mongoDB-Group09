@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace connect_mongo
 {
-    class VacXinDAO
+    class MatHangDAO
     {
         public DataTable getListSanPham()
         {
@@ -73,6 +73,52 @@ namespace connect_mongo
 
             Console.WriteLine(result);
             return true;
+        }
+
+        public DataTable TimKiemMaMH(string tenLH)
+        {
+            //string query = "select MaMH,GiaBan from MatHang  where TenMH = N'" + tenLH + "'";
+            //DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            //return data;
+
+            var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+
+            var query = collection.AsQueryable()
+                                   .Where(p => p.TenMH == tenLH)
+                                   .Select(p => p)
+                                   .ToList();
+
+            Console.WriteLine(query.ToJson());
+
+            return MongoConnect.toDataTable(query);
+
+        }
+
+        public DataTable TimKiemTenMH(string tenLH)
+        {
+            var MHColection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+            var LHCollection = MongoConnect.Instance.database.GetCollection<LoaiHang>("LoaiHang");
+
+            var result = from m in MHColection.AsQueryable()
+                         join l in LHCollection.AsQueryable()
+                         on m.MaLH equals l.MaLH
+                         into g
+                         select new
+                         {
+                             MaMH = m.MaMH,
+                             MaLH = m.MaLH,
+                             TenMH = m.TenMH,
+                             LoaiHang = g
+                         };
+
+            var rs2 = result.ToList().AsQueryable()
+                    .Where(p => p.LoaiHang.FirstOrDefault().TenLH == tenLH)
+                    .Select(p => new { TenMH = p.TenMH })
+                    .ToList();
+
+            Console.WriteLine(rs2.ToJson());
+
+            return MongoConnect.toDataTable(rs2);
         }
 
     }

@@ -39,4 +39,23 @@ namespace connect_mongo
         public int SoLuong { get; set; }
         public double DonGia { get; set; }
     }
+
+    public class LoaiHang
+    {
+        public string _id { get; set; }
+        public string MaLH { get; set; }
+        public string TenLH { get; set; }
+    }
+    public class MatHangLoaiHang
+    {
+        public string _id { get; set; }
+        public string MaMH { get; set; }
+        public string TenMH { get; set; }
+        public string DonVi { get; set; }
+        public int GiaBan { get; set; }
+        public int SoLuong { get; set; }
+        public string MaLH { get; set; }
+        public object Anh { get; set; }
+        public string TenLH { get; set; }
+    }
 }
