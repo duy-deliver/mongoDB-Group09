@@ -196,6 +196,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(469, 416);
             this.panel1.TabIndex = 212;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cmbLoaihang
             // 
@@ -348,6 +349,7 @@
             0,
             0,
             0});
+            this.txtSoLuong.ValueChanged += new System.EventHandler(this.txtSoLuong_ValueChanged);
             // 
             // lblGiaban
             // 
@@ -823,6 +825,7 @@
             this.pnlTT.Name = "pnlTT";
             this.pnlTT.Size = new System.Drawing.Size(729, 240);
             this.pnlTT.TabIndex = 216;
+            this.pnlTT.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTT_Paint);
             // 
             // txtTienkhachdua
             // 

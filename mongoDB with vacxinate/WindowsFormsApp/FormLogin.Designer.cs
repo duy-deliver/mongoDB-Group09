@@ -83,6 +83,7 @@ namespace WindowsFormsApp
             this.txtTenDangNhap.PasswordChar = '\0';
             this.txtTenDangNhap.PlaceholderText = "";
             this.txtTenDangNhap.SelectedText = "";
+            this.txtTenDangNhap.SelectionStart = 6;
             this.txtTenDangNhap.ShadowDecoration.BorderRadius = 10;
             this.txtTenDangNhap.ShadowDecoration.Parent = this.txtTenDangNhap;
             this.txtTenDangNhap.Size = new System.Drawing.Size(486, 50);
@@ -383,6 +384,7 @@ namespace WindowsFormsApp
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDangNhap1";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

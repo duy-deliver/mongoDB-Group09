@@ -24,7 +24,7 @@ namespace WindowsFormsApp
             //luutennv = tennv;
             cmbĐVT.SelectedIndex = 0;
             cmbLoaiHang.SelectedIndex = 0;
-            HienThi();
+            HienThi(); 
             
             
         }
@@ -207,6 +207,16 @@ namespace WindowsFormsApp
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void UC_KhoHang_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTenMH_TextChanged(object sender, EventArgs e)
         {
 
         }

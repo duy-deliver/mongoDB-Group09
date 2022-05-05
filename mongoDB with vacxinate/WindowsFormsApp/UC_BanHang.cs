@@ -448,6 +448,7 @@ namespace WindowsFormsApp
                     //FormInHD formInHD = new FormInHD(lblMakh.Text);
                     foreach (ListViewItem item in lvSanPhamBan.Items)
                     {
+                        //###thay bang ham update so luong sau nhap
                         LuuDH(hd.MaHD, item.SubItems[0].Text, Int32.Parse(item.SubItems[2].Text), Int32.Parse(item.SubItems[3].Text));  //lưu chi tiết hóa đơn
                         string query = "update MatHang set SoLuong = SoLuong - " + Int32.Parse(item.SubItems[2].Text) + "where MaMH = '" + item.SubItems[0].Text + "'";  // cập nhật lại số lượng 
                         DataProvider.Instance.ExecuteQuery(query);
@@ -502,6 +503,21 @@ namespace WindowsFormsApp
         }
 
         private void lblMaKH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlTT_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtSoLuong_ValueChanged(object sender, EventArgs e)
         {
 
         }

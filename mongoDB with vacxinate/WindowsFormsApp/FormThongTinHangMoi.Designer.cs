@@ -31,6 +31,8 @@ namespace WindowsFormsApp
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnHuy = new FontAwesome.Sharp.IconButton();
+            this.btnLuu = new FontAwesome.Sharp.IconButton();
             this.label6 = new System.Windows.Forms.Label();
             this.cmbLoaiHang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbĐVT = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -45,8 +47,6 @@ namespace WindowsFormsApp
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHuy = new FontAwesome.Sharp.IconButton();
-            this.btnLuu = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -88,6 +88,52 @@ namespace WindowsFormsApp
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(780, 307);
             this.panel3.TabIndex = 222;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnHuy.FlatAppearance.BorderSize = 2;
+            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuy.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnHuy.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.btnHuy.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnHuy.IconSize = 25;
+            this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuy.Location = new System.Drawing.Point(471, 253);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnHuy.Size = new System.Drawing.Size(140, 42);
+            this.btnHuy.TabIndex = 253;
+            this.btnHuy.Text = "        Hủy";
+            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnLuu.FlatAppearance.BorderSize = 2;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnLuu.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.btnLuu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLuu.IconSize = 25;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(627, 253);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnLuu.Size = new System.Drawing.Size(140, 42);
+            this.btnLuu.TabIndex = 252;
+            this.btnLuu.Text = "        Lưu";
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // label6
             // 
@@ -188,7 +234,7 @@ namespace WindowsFormsApp
             this.txtTenMH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenMH.HoverState.Parent = this.txtTenMH;
             this.txtTenMH.Location = new System.Drawing.Point(11, 88);
-            this.txtTenMH.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtTenMH.Margin = new System.Windows.Forms.Padding(6);
             this.txtTenMH.Name = "txtTenMH";
             this.txtTenMH.PasswordChar = '\0';
             this.txtTenMH.PlaceholderText = "";
@@ -197,6 +243,7 @@ namespace WindowsFormsApp
             this.txtTenMH.ShadowDecoration.Parent = this.txtTenMH;
             this.txtTenMH.Size = new System.Drawing.Size(754, 35);
             this.txtTenMH.TabIndex = 245;
+            this.txtTenMH.TextChanged += new System.EventHandler(this.txtTenMH_TextChanged);
             this.txtTenMH.Click += new System.EventHandler(this.txtTenMH_Click);
             // 
             // label11
@@ -226,7 +273,7 @@ namespace WindowsFormsApp
             this.txtMaMH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaMH.HoverState.Parent = this.txtMaMH;
             this.txtMaMH.Location = new System.Drawing.Point(11, 188);
-            this.txtMaMH.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtMaMH.Margin = new System.Windows.Forms.Padding(6);
             this.txtMaMH.Name = "txtMaMH";
             this.txtMaMH.PasswordChar = '\0';
             this.txtMaMH.PlaceholderText = "";
@@ -298,52 +345,6 @@ namespace WindowsFormsApp
             this.label1.TabIndex = 16;
             this.label1.Text = "Thông tin mặt hàng mới";
             // 
-            // btnHuy
-            // 
-            this.btnHuy.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnHuy.FlatAppearance.BorderSize = 2;
-            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuy.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnHuy.IconChar = FontAwesome.Sharp.IconChar.Ban;
-            this.btnHuy.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnHuy.IconSize = 25;
-            this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuy.Location = new System.Drawing.Point(471, 253);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.btnHuy.Size = new System.Drawing.Size(140, 42);
-            this.btnHuy.TabIndex = 253;
-            this.btnHuy.Text = "        Hủy";
-            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnLuu.FlatAppearance.BorderSize = 2;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnLuu.IconChar = FontAwesome.Sharp.IconChar.Save;
-            this.btnLuu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLuu.IconSize = 25;
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(627, 253);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.btnLuu.Size = new System.Drawing.Size(140, 42);
-            this.btnLuu.TabIndex = 252;
-            this.btnLuu.Text = "        Lưu";
-            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
             // FormThongTinHangMoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -355,6 +356,7 @@ namespace WindowsFormsApp
             this.Name = "FormThongTinHangMoi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormThongtinhangmoi";
+            this.Load += new System.EventHandler(this.FormThongTinHangMoi_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

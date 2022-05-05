@@ -189,6 +189,7 @@ namespace WindowsFormsApp
             if (check_data() == true)
             {
                 string query = "update MatHang set GiaBan = '" + txtGiaBan.Text + "'  where MaMH = '" + lblmasp.Text + "'";  // cập nhật lại số lượng 
+
                 DataProvider.Instance.ExecuteQuery(query);
 
                 if (Int32.Parse(txtSL.Text.ToString()) <= 0)
@@ -407,6 +408,26 @@ namespace WindowsFormsApp
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void UC_NhapHang_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
         {
 
         }
