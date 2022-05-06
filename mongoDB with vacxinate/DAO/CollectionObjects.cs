@@ -33,14 +33,6 @@ namespace DAO
         public object Anh { get; set; }
     }
 
-    public class ChiTietPN
-    {
-        public string MaPN { get; set; }
-        public string MaMH { get; set; }
-        public int SoLuong { get; set; }
-        public double DonGia { get; set; }
-    }
-
     public class LoaiHang
     {
         public string _id { get; set; }
@@ -58,5 +50,33 @@ namespace DAO
         public string MaLH { get; set; }
         public object Anh { get; set; }
         public string TenLH { get; set; }
+    }
+
+    public class ChiTietHD
+    {
+        public string _id { get; set; }
+        public string MaHD { get; set; }
+        public string MaMH { get; set; }
+        public int SoLuong { get; set; }
+        public double DonGia { get; set; }
+    }
+
+    public class ChiTietPN
+    {
+        public string _id { get; set; }
+        public string MaPN { get; set; }
+        public string MaMH { get; set; }
+        public int SoLuong { get; set; }
+        public double DonGia { get; set; }
+    }
+
+    public class NhaCungCap
+    {
+        public string _id { get; set; }
+        public string MaNCC { get; set; }
+        public string TenNCC { get; set; }
+        public string DiaChi { get; set; }
+        public string SDT { get; set; }
+        public string Email { get; set; }
     }
 }

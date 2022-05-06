@@ -1,4 +1,6 @@
 ﻿using DTO;
+using GUI;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -82,9 +84,19 @@ namespace WindowsFormsApp
 
         public List<MatHangDTO> getListSanPham()
         {
-            string query = "select * from MatHang";
+            // chỗ này nè sản phẩm là mặt hàng á 
+            string query1 = "select * from MatHang";
             List<MatHangDTO> list = new List<MatHangDTO>();
-            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            DataTable dt1 = DataProvider.Instance.ExecuteQuery(query1);
+            var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+
+            var query = collection.AsQueryable()
+                                   .Select(p => p)
+                                   .ToList();
+            Console.WriteLine(query.First().GiaBan.GetType());
+            //DataTable dt = query.CopyToDataTable();
+            DataTable dt = MongoConnect.toDataTable(query);
+
             foreach (DataRow item in dt.Rows)
             {
                MatHangDTO  product = new MatHangDTO(item);
@@ -97,6 +109,7 @@ namespace WindowsFormsApp
 
         public List<NhaCungCapDTO> getListNhaCungCap()
         {
+            // nhà cùng cấp nằm ở đây nè 
             string query = "select * from NhaCungCap";
             List<NhaCungCapDTO> list = new List<NhaCungCapDTO>();
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
@@ -175,7 +188,7 @@ namespace WindowsFormsApp
         {
             if (cmbTensp.SelectedIndex > 0)
             {
-                i = cmbTensp.SelectedIndex;
+                //i = cmbTensp.SelectedIndex;
                 lblmasp.Text = list[i].MaMH;
             
                 txtGiaBan.Text = list[i].GiaBan.ToString();
@@ -428,6 +441,11 @@ namespace WindowsFormsApp
         }
 
         private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lsvNhaphang_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

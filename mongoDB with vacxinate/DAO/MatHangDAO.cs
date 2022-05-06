@@ -28,8 +28,18 @@ namespace DAO
 
         public List<MatHangDTO> getListSanPham()
         {
+            // sao m kg gop dc 2 cai chuoi ket noi lai ha Duy
+
             List<MatHangDTO> list = new List<MatHangDTO>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("select * from MatHang");
+            //DataTable data = DataProvider.Instance.ExecuteQuery("select * from MatHang");
+
+            var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+
+            var query = collection.AsQueryable()
+                                   .Select(p => p)
+                                   .ToList();
+            DataTable data = MongoConnect.toDataTable(query);
+
             foreach (DataRow item in data.Rows)
             {
                 MatHangDTO MatHang = new MatHangDTO(item);
@@ -59,14 +69,31 @@ namespace DAO
 
         public bool kiemtraXoa(string maHang)
         {
-            string query = String.Format("select * from ChiTietHD where MaMH = '{0}'", maHang);
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            //string query = String.Format("select * from ChiTietHD where MaMH = '{0}'", maHang);
+            //DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<ChiTietHD>("ChiTietHD");
+            var query = collection.AsQueryable()
+                                   .Where(p => p.MaMH == maHang)
+                                   .Select(p => p)
+                                   .ToList();
+            DataTable data = MongoConnect.toDataTable(query);
+
             if (data.Rows.Count > 0)
             {
                 return false;
             }
-            query = String.Format("select * from ChiTietPN where MaMH = '{0}'", maHang);
-            data = DataProvider.Instance.ExecuteQuery(query);
+
+            //query = String.Format("select * from ChiTietPN where MaMH = '{0}'", maHang);
+            //data = DataProvider.Instance.ExecuteQuery(query);
+
+            var collectionChiTietPN = MongoConnect.Instance.database.GetCollection<ChiTietPN>("ChiTietPN");
+            var query2 = collectionChiTietPN.AsQueryable()
+                                   .Where(p => p.MaMH == maHang)
+                                   .Select(p => p)
+                                   .ToList();
+            data = MongoConnect.toDataTable(query2);
+
             if (data.Rows.Count > 0)
             {
                 return false;
@@ -78,17 +105,31 @@ namespace DAO
         {
             string query = String.Format("update MatHang set SoLuong = {0} + SoLuong, GiaGoc = (GiaGoc + {1})/2 where MaMH = '{2}'", SL, DonGia, maHang);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            //var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+
+            //var slcur = collection.AsQueryable()
+            //    .Where(w => w.MaMH == maHang)
+            //    .Select(w => new { w.SoLuong, w.GiaBan})
+            //    .FirstOrDefault();
+
+            //var result = collection.UpdateOneAsync(
+            //    filter: w => w.MaMH == maHang,
+            //    update: Builders<MatHang>.Update.Set(m => m.SoLuong, slcur.SoLuong + SL)
+            //                                    .Set(m => m.Gia)
+            //    );
+
             return result > 0;
         }
 
-        public bool xoaHang(string maKH)
+        public bool xoaHang(string maKH)  //pending
         {
             string query = String.Format("delete from MatHang where MaMH = '{0}'", maKH);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
 
-        public string loadMaHH()
+        public string loadMaHH()  //no used
         {
             string maKHnext = "SP001";
             string query = "select top 1 MaMH from MatHang order by MaMH desc";
@@ -114,7 +155,7 @@ namespace DAO
             return maKHnext;
         }
 
-        public DataTable TimKiemHH(string maPN)
+        public DataTable TimKiemHH(string maPN)  //no used
         {
             string query = "exec usp_timMatHang @maPN";
             DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { maPN });
@@ -136,7 +177,7 @@ namespace DAO
             return a;
         } */
 
-        public bool temHH(MatHangDTO data, string imgLocation)
+        public bool temHH(MatHangDTO data, string imgLocation)  //no used
         {
             byte[] images = null;
             FileStream stream = new FileStream(imgLocation, FileMode.Open, FileAccess.Read);
@@ -160,7 +201,7 @@ namespace DAO
             return false;
         }
 
-        public void capNhatHinh(string imgLocation, string maHang)
+        public void capNhatHinh(string imgLocation, string maHang)  //no used
         {
             byte[] images = null;
             FileStream stream = new FileStream(imgLocation, FileMode.Open, FileAccess.Read);
@@ -178,7 +219,7 @@ namespace DAO
             }
         }
 
-        public byte[] getAnhByID(string ID)
+        public byte[] getAnhByID(string ID)  //noused
         {
             string query = String.Format("select Anh from MatHang where MaMH = '{0}'", ID);
             DataRow data = DataProvider.Instance.ExecuteQuery(query).Rows[0];
@@ -196,7 +237,7 @@ namespace DAO
         }
 
 
-        public DataTable TimKiemMH(string tk)
+        public DataTable TimKiemMH(string tk) //pending
         {
             string query = "select MatHang.MaMH as [Mã hàng hóa],MatHang.TenMH as [Tên hàng hóa],DonVi as [Đơn vị tính],sum(ChitietPN.Soluong) as [Số lượng nhập],MatHang.SoLuong as [Số lượng tồn], (sum(ChitietPN.Soluong) - MatHang.SoLuong) as [Số lượng bán],MatHang.GiaBan as [Giá bán] from MatHang inner join ChiTietPN on MatHang.MaMH = ChiTietPN.MaMH where MatHang.TenMH like N'%" + tk + "%' or MatHang.MaMH like '%" + tk + "%'  group by MatHang.MaMH,MatHang.SoLuong,MatHang.TenMH,MatHang.DonVi,DonVi,MatHang.GiaBan";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
@@ -204,7 +245,7 @@ namespace DAO
         }
 
 
-        public DataTable TimKiemGiaBan(string maMH)
+        public DataTable TimKiemGiaBan(string maMH) //no used
         {
             string query = "select GiaBan from MatHang where MaMH = '" + maMH + "'";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
@@ -248,15 +289,23 @@ namespace DAO
         }
 
 
-        public DataTable TimKiemLH(string tk)
+        public DataTable TimKiemLH(string tk) 
         {
-            string query = "select MaLH from LoaiHang where TenLH = N'" + tk + "'";
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            //string query = "select MaLH from LoaiHang where TenLH = N'" + tk + "'";
+            //DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<LoaiHang>("LoaiHang");
+            var query = collection.AsQueryable()
+                                   .Where(p => p.TenLH == tk)
+                                   .Select(p => p.MaLH)
+                                   .ToList();
+            var data = MongoConnect.toDataTable(query);
+
             return data;
         }
 
 
-        public DataTable TimKiemMHTrongKH(string tk)
+        public DataTable TimKiemMHTrongKH(string tk) //pending
         {
             string query = "select MaMH as [Mã mặt hàng], TenMH as [Tên mặt hàng], DonVi as [Đơn vị],SoLuong as [Số lượng], GiaBan as [Giá bán], TenLH as [Loại hàng] from MatHang inner join LoaiHang on MatHang.MaLH = LoaiHang.MaLH where MaMH like N'%"+tk+ "%' or TenMH like N'%" + tk + "%'";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
@@ -266,8 +315,15 @@ namespace DAO
 
         public DataTable TimKiemSL(string tk)
         {
-            string query = "select SoLuong from MatHang where MaMH = N'" + tk + "'";
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            //string query = "select SoLuong from MatHang where MaMH = N'" + tk + "'";
+            //DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+            var query = collection.AsQueryable()
+                                   .Where(p => p.MaMH == tk)
+                                   .Select(p => p.SoLuong)
+                                   .ToList();
+            var data = MongoConnect.toDataTable(query);
             return data;
         }
 
