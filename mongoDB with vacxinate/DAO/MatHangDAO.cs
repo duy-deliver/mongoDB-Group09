@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
+using MongoDB.Driver;
 using WindowsFormsApp;
 
 namespace DAO
@@ -39,9 +40,20 @@ namespace DAO
 
         public bool suaHH(string MaHang, string TenHH, string loai, string GiaBan, string DonVi)
         {
-            string query = String.Format("update MatHang set  GiaBan = '" + GiaBan + "', TenMH = N'" + TenHH + "',MaLH = N'" + loai + "', DonVi = N'" + DonVi + "'  where MaMH = '" + MaHang + "'");
-            int result = DataProvider.Instance.ExecuteNonQuery(query);
-            return result > 0;
+            //string query = String.Format("update MatHang set  GiaBan = '" + GiaBan + "', TenMH = N'" + TenHH + "',MaLH = N'" + loai + "', DonVi = N'" + DonVi + "'  where MaMH = '" + MaHang + "'");
+            //int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+
+            var result = collection.UpdateOneAsync(
+                filter: w => w.MaMH == MaHang,
+                update: Builders<MatHang>.Update.Set(m => m.TenMH, TenHH)
+                                                .Set(m => m.DonVi, DonVi)
+                                                .Set(m => m.MaLH, loai)
+                                                .Set(m => m.GiaBan, Int64.Parse(GiaBan))
+                                                );
+
+            return true;
         }
 
 
@@ -202,9 +214,37 @@ namespace DAO
 
         public DataTable HienThi()
         {
-            string query = "select MaMH as [Mã mặt hàng], TenMH as [Tên mặt hàng], DonVi as [Đơn vị],SoLuong as [Số lượng], GiaBan as [Giá bán], TenLH as [Loại hàng] from MatHang inner join LoaiHang on MatHang.MaLH = LoaiHang.MaLH";
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            //string query = "select MaMH as [Mã mặt hàng], TenMH as [Tên mặt hàng], DonVi as [Đơn vị],SoLuong as [Số lượng], GiaBan as [Giá bán], TenLH as [Loại hàng] from MatHang inner join LoaiHang on MatHang.MaLH = LoaiHang.MaLH";
+            //DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            var MHColection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+            var LHCollection = MongoConnect.Instance.database.GetCollection<LoaiHang>("LoaiHang");
+
+            var result = from m in MHColection.AsQueryable()
+                         join l in LHCollection.AsQueryable()
+                         on m.MaLH equals l.MaLH
+                         into g
+                         select new
+                         {
+                             MaMH = m.MaMH,
+                             TenMH = m.TenMH,
+                             DonVi = m.DonVi,
+                             Soluong = m.SoLuong,
+                             GiaBan = m.GiaBan,
+                             TenLH = g.First().TenLH,
+                         };
+
+            DataTable data = MongoConnect.toDataTable(result.ToList());
+
+            data.Columns["MaMH"].ColumnName = "Mã mặt hàng";
+            data.Columns["TenMH"].ColumnName = "Tên mặt hàng";
+            data.Columns["DonVi"].ColumnName = "Đơn vị";
+            data.Columns["Soluong"].ColumnName = "Số lượng";
+            data.Columns["GiaBan"].ColumnName = "Giá bán";
+            data.Columns["TenLH"].ColumnName = "Loại hàng";
+
             return data;
+
         }
 
 

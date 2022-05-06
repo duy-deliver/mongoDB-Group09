@@ -153,6 +153,16 @@ namespace WindowsFormsApp
             txtTenMH.Text = "";
             txtTenMH.ForeColor = Color.Black;
         }
+
+        private void FormThongTinHangMoi_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTenMH_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

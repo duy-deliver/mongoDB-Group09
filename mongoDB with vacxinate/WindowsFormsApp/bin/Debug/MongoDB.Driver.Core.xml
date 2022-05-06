@@ -8958,6 +8958,16 @@
             Gets the geoNear command feature.
             </summary>
         </member>
+        <member name="P:MongoDB.Driver.Core.Misc.Feature.GetField">
+            <summary>
+            Gets the getField feature.
+            </summary>
+        </member>
+        <member name="P:MongoDB.Driver.Core.Misc.Feature.GetMoreComment">
+            <summary>
+            Gets the getMore comment feature.
+            </summary>
+        </member>
         <member name="P:MongoDB.Driver.Core.Misc.Feature.GroupCommand">
             <summary>
             Gets the group command feature.
@@ -11350,7 +11360,7 @@
         <member name="P:MongoDB.Driver.Core.Operations.CreateCollectionOperation.ExpireAfter">
             <summary>
             Gets or sets the expiration timespan for time series collections. Used to automatically delete documents in time series collections.
-            See https://docs.mongodb.com/manual/reference/command/create/ for supported options and https://docs.mongodb.com/manual/core/timeseries-collections/
+            See https://www.mongodb.com/docs/manual/reference/command/create/ for supported options and https://www.mongodb.com/docs/manual/core/timeseries-collections/
             for more information on time series collections.
             </summary>
             <value>
@@ -11405,7 +11415,7 @@
         <member name="P:MongoDB.Driver.Core.Operations.CreateCollectionOperation.TimeSeriesOptions">
             <summary>
             Gets or sets the <see cref="P:MongoDB.Driver.Core.Operations.CreateCollectionOperation.TimeSeriesOptions"/>. Represents an object containing options for creating time series collections.
-            See https://docs.mongodb.com/manual/reference/command/create/ for supported options and https://docs.mongodb.com/manual/core/timeseries-collections/
+            See https://www.mongodb.com/docs/manual/reference/command/create/ for supported options and https://www.mongodb.com/docs/manual/core/timeseries-collections/
             for more information on time series collections.
             </summary>
             <value>
@@ -17890,11 +17900,6 @@
             Gets the identifier of the message this is a response to.
             </summary>
         </member>
-        <member name="P:MongoDB.Driver.Core.ServiceIdHelper.IsServiceIdEmulationEnabled">
-            <summary>
-            Temporary workaround until server will actually support serviceId.
-            </summary>
-        </member>
         <member name="T:MongoDB.Driver.CoreServerSession">
             <summary>
             A server session.
@@ -19891,8 +19896,8 @@
         </member>
         <member name="T:MongoDB.Driver.TimeSeriesOptions">
             <summary>
-            Defines the time series options to use when creating a time series collection. See https://docs.mongodb.com/manual/reference/command/create/ for supported options
-            and https://docs.mongodb.com/manual/core/timeseries-collections/ for more information on time series collections.
+            Defines the time series options to use when creating a time series collection. See https://www.mongodb.com/docs/manual/reference/command/create/ for supported options
+            and https://www.mongodb.com/docs/manual/core/timeseries-collections/ for more information on time series collections.
             </summary>
         </member>
         <member name="M:MongoDB.Driver.TimeSeriesOptions.#ctor(System.String,MongoDB.Driver.Optional{System.String},MongoDB.Driver.Optional{System.Nullable{MongoDB.Driver.TimeSeriesGranularity}})">

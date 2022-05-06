@@ -101,7 +101,7 @@ namespace WindowsFormsApp
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.lblTk);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1254, 54);
             this.panel2.TabIndex = 220;
@@ -161,7 +161,7 @@ namespace WindowsFormsApp
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.txtGiaNhap);
             this.panel1.Location = new System.Drawing.Point(17, 67);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1221, 402);
             this.panel1.TabIndex = 221;
@@ -352,7 +352,7 @@ namespace WindowsFormsApp
             "----- Chọn tên nhà cung cấp -----"});
             this.cmbTenncc.ItemsAppearance.Parent = this.cmbTenncc;
             this.cmbTenncc.Location = new System.Drawing.Point(636, 159);
-            this.cmbTenncc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTenncc.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTenncc.Name = "cmbTenncc";
             this.cmbTenncc.ShadowDecoration.Parent = this.cmbTenncc;
             this.cmbTenncc.Size = new System.Drawing.Size(288, 36);
@@ -513,7 +513,7 @@ namespace WindowsFormsApp
             this.dpkNgaykt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dpkNgaykt.HoverState.Parent = this.dpkNgaykt;
             this.dpkNgaykt.Location = new System.Drawing.Point(22, 265);
-            this.dpkNgaykt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dpkNgaykt.Margin = new System.Windows.Forms.Padding(2);
             this.dpkNgaykt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dpkNgaykt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dpkNgaykt.Name = "dpkNgaykt";
@@ -687,7 +687,7 @@ namespace WindowsFormsApp
             "----- Chọn tên sản phẩm -----"});
             this.cmbTensp.ItemsAppearance.Parent = this.cmbTensp;
             this.cmbTensp.Location = new System.Drawing.Point(24, 187);
-            this.cmbTensp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTensp.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTensp.Name = "cmbTensp";
             this.cmbTensp.ShadowDecoration.Parent = this.cmbTensp;
             this.cmbTensp.Size = new System.Drawing.Size(288, 36);
@@ -744,7 +744,7 @@ namespace WindowsFormsApp
             // 
             this.panel6.BackColor = System.Drawing.Color.Silver;
             this.panel6.Location = new System.Drawing.Point(606, 4);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1, 425);
             this.panel6.TabIndex = 236;
@@ -755,7 +755,7 @@ namespace WindowsFormsApp
             this.panel5.Controls.Add(this.label13);
             this.panel5.ForeColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(626, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(579, 41);
             this.panel5.TabIndex = 235;
@@ -778,7 +778,7 @@ namespace WindowsFormsApp
             this.panel4.Controls.Add(this.label1);
             this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(8, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(582, 41);
             this.panel4.TabIndex = 234;
@@ -810,7 +810,7 @@ namespace WindowsFormsApp
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
             this.panel3.Location = new System.Drawing.Point(8, 60);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1221, 1);
             this.panel3.TabIndex = 1;
@@ -857,7 +857,7 @@ namespace WindowsFormsApp
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.panel11);
             this.panel7.Location = new System.Drawing.Point(17, 473);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1221, 343);
             this.panel7.TabIndex = 222;
@@ -875,7 +875,7 @@ namespace WindowsFormsApp
             this.btnXacNhan.IconSize = 30;
             this.btnXacNhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXacNhan.Location = new System.Drawing.Point(628, 175);
-            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.btnXacNhan.Size = new System.Drawing.Size(553, 40);
@@ -898,7 +898,7 @@ namespace WindowsFormsApp
             this.btnThemTTMathang.IconSize = 30;
             this.btnThemTTMathang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemTTMathang.Location = new System.Drawing.Point(628, 231);
-            this.btnThemTTMathang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThemTTMathang.Margin = new System.Windows.Forms.Padding(2);
             this.btnThemTTMathang.Name = "btnThemTTMathang";
             this.btnThemTTMathang.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.btnThemTTMathang.Size = new System.Drawing.Size(553, 40);
@@ -921,7 +921,7 @@ namespace WindowsFormsApp
             this.btnLamMoi.IconSize = 28;
             this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLamMoi.Location = new System.Drawing.Point(627, 284);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(2);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.btnLamMoi.Size = new System.Drawing.Size(553, 40);
@@ -943,7 +943,7 @@ namespace WindowsFormsApp
             this.btnXoa.IconSize = 30;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(628, 120);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.btnXoa.Size = new System.Drawing.Size(553, 40);
@@ -966,7 +966,7 @@ namespace WindowsFormsApp
             this.btnThem.IconSize = 30;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThem.Location = new System.Drawing.Point(628, 68);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.btnThem.Size = new System.Drawing.Size(553, 40);
@@ -982,10 +982,11 @@ namespace WindowsFormsApp
             this.panel10.Controls.Add(this.label12);
             this.panel10.ForeColor = System.Drawing.Color.White;
             this.panel10.Location = new System.Drawing.Point(626, 4);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(579, 41);
             this.panel10.TabIndex = 238;
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // label12
             // 
@@ -998,12 +999,13 @@ namespace WindowsFormsApp
             this.label12.TabIndex = 15;
             this.label12.Text = "                                                 Thực hiện chức năng\r\n\r\n";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Silver;
             this.panel9.Location = new System.Drawing.Point(606, 2);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1, 425);
             this.panel9.TabIndex = 237;
@@ -1014,7 +1016,7 @@ namespace WindowsFormsApp
             this.lsvNhaphang.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsvNhaphang.HideSelection = false;
             this.lsvNhaphang.Location = new System.Drawing.Point(7, 68);
-            this.lsvNhaphang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lsvNhaphang.Margin = new System.Windows.Forms.Padding(2);
             this.lsvNhaphang.Name = "lsvNhaphang";
             this.lsvNhaphang.Size = new System.Drawing.Size(595, 265);
             this.lsvNhaphang.TabIndex = 223;
@@ -1026,7 +1028,7 @@ namespace WindowsFormsApp
             this.panel8.Controls.Add(this.label11);
             this.panel8.ForeColor = System.Drawing.Color.White;
             this.panel8.Location = new System.Drawing.Point(8, 3);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(561, 41);
             this.panel8.TabIndex = 235;
@@ -1042,12 +1044,13 @@ namespace WindowsFormsApp
             this.label11.TabIndex = 15;
             this.label11.Text = "                                                  Giỏ hàng nhập\r\n";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Silver;
             this.panel11.Location = new System.Drawing.Point(2, 56);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(1221, 1);
             this.panel11.TabIndex = 16;
@@ -1060,9 +1063,10 @@ namespace WindowsFormsApp
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_NhapHang";
             this.Size = new System.Drawing.Size(1254, 834);
+            this.Load += new System.EventHandler(this.UC_NhapHang_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

@@ -341,6 +341,7 @@ namespace WindowsFormsApp
             this.Name = "FormSDT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSodienthoai";
+            this.Load += new System.EventHandler(this.FormSDT_Load);
             this.pnlSDT.ResumeLayout(false);
             this.pnlSDT.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
