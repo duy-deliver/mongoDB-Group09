@@ -294,10 +294,11 @@ namespace DAO
             //string query = "select MaLH from LoaiHang where TenLH = N'" + tk + "'";
             //DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
+            //var test = "Trẻ em dưới 10 tuổi";
             var collection = MongoConnect.Instance.database.GetCollection<LoaiHang>("LoaiHang");
             var query = collection.AsQueryable()
                                    .Where(p => p.TenLH == tk)
-                                   .Select(p => p.MaLH)
+                                   .Select(p => new { p.MaLH })
                                    .ToList();
             var data = MongoConnect.toDataTable(query);
 
@@ -321,7 +322,7 @@ namespace DAO
             var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
             var query = collection.AsQueryable()
                                    .Where(p => p.MaMH == tk)
-                                   .Select(p => p.SoLuong)
+                                   .Select(p => new { p.SoLuong })
                                    .ToList();
             var data = MongoConnect.toDataTable(query);
             return data;

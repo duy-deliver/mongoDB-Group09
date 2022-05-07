@@ -166,7 +166,7 @@ namespace WindowsFormsApp
             var collection = MongoConnect.Instance.database.GetCollection<PhieuNhap>("PhieuNhap");
 
             var query = collection.AsQueryable()
-                                   .Select(p => p.MaPN)
+                                   .Select(p => new { p.MaPN })
                                    .ToList();
             DataTable dt = MongoConnect.toDataTable(query);
 
