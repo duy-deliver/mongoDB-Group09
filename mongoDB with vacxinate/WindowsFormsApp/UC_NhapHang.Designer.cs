@@ -739,6 +739,7 @@ namespace WindowsFormsApp
             this.lblMapn.Size = new System.Drawing.Size(62, 20);
             this.lblMapn.TabIndex = 237;
             this.lblMapn.Text = " PN005";
+            this.lblMapn.Click += new System.EventHandler(this.lblMapn_Click);
             // 
             // panel6
             // 

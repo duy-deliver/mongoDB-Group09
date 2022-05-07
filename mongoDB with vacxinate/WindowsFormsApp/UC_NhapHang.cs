@@ -85,15 +85,14 @@ namespace WindowsFormsApp
         public List<MatHangDTO> getListSanPham()
         {
             // chỗ này nè sản phẩm là mặt hàng á 
-            string query1 = "select * from MatHang";
+            //string query1 = "select * from MatHang";
             List<MatHangDTO> list = new List<MatHangDTO>();
-            DataTable dt1 = DataProvider.Instance.ExecuteQuery(query1);
+            //DataTable dt1 = DataProvider.Instance.ExecuteQuery(query1);
             var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
-
             var query = collection.AsQueryable()
                                    .Select(p => p)
                                    .ToList();
-            Console.WriteLine(query.First().GiaBan.GetType());
+            //Console.WriteLine(query.First().GiaBan.GetType());
             //DataTable dt = query.CopyToDataTable();
             DataTable dt = MongoConnect.toDataTable(query);
 
@@ -110,9 +109,18 @@ namespace WindowsFormsApp
         public List<NhaCungCapDTO> getListNhaCungCap()
         {
             // nhà cùng cấp nằm ở đây nè 
-            string query = "select * from NhaCungCap";
+            //string query = "select * from NhaCungCap";
             List<NhaCungCapDTO> list = new List<NhaCungCapDTO>();
-            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            //DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<NhaCungCap>("NhaCungCap");
+
+            var query = collection.AsQueryable()
+                                   .Select(p => p)
+                                   .ToList();
+
+            DataTable dt = MongoConnect.toDataTable(query);
+
             foreach (DataRow item in dt.Rows)
             {
                 NhaCungCapDTO TTncc = new NhaCungCapDTO(item);
@@ -121,6 +129,7 @@ namespace WindowsFormsApp
             return list;
 
         }
+
         List<NhaCungCapDTO> list1;
 
 
@@ -151,8 +160,16 @@ namespace WindowsFormsApp
         
         private string Matudong()
         {
-            string query = "select MaPN from PhieuNhap";
-            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            //string query = "select MaPN from PhieuNhap";
+            //DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<PhieuNhap>("PhieuNhap");
+
+            var query = collection.AsQueryable()
+                                   .Select(p => p.MaPN)
+                                   .ToList();
+            DataTable dt = MongoConnect.toDataTable(query);
+
             string ma = "";
             if (dt.Rows.Count <= 0)
             {
@@ -188,7 +205,7 @@ namespace WindowsFormsApp
         {
             if (cmbTensp.SelectedIndex > 0)
             {
-                //i = cmbTensp.SelectedIndex;
+                i = cmbTensp.SelectedIndex;
                 lblmasp.Text = list[i].MaMH;
             
                 txtGiaBan.Text = list[i].GiaBan.ToString();
@@ -334,11 +351,23 @@ namespace WindowsFormsApp
         private bool LuuPN(PhieuNhapDTO pn)
         {
             // Convert datetime to date SQL Server 
-            string query = String.Format("insert into PhieuNhap values('{0}','{1}','{2}','{3}')", pn.MaPN, pn.MaNCC, pn.NgayNhap, pn.MaNV);
+            //string query = String.Format("insert into PhieuNhap values('{0}','{1}','{2}','{3}')", 
+            //    pn.MaPN, pn.MaNCC, pn.NgayNhap, pn.MaNV);
 
-            DataProvider.Instance.ExecuteQuery(query);
+            //DataProvider.Instance.ExecuteQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<PhieuNhap>("PhieuNhap");
+
+            var document = new PhieuNhap();
+            document.MaPN = pn.MaPN;
+            document.MaNCC = pn.MaNCC;
+            document.NgayNhap = pn.NgayNhap;
+            document.MaNV = pn.MaNV;
+
+            collection.InsertOneAsync(document);
             return true;
         }
+
 
 
 
@@ -348,12 +377,39 @@ namespace WindowsFormsApp
         private bool LuuChitietPN(string mapn, string mahh, int sl, int dongia)
         {
             // Convert datetime to date SQL Server 
-            string query = String.Format("insert into ChiTietPN values('{0}','{1}','{2}','{3}')", mapn, mahh, sl, dongia);
-            DataProvider.Instance.ExecuteQuery(query);
+            //string query = String.Format("insert into ChiTietPN values('{0}','{1}','{2}','{3}')", mapn, mahh, sl, dongia);
+            //DataProvider.Instance.ExecuteQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<ChiTietPN>("ChiTietPN");
+
+            var document = new ChiTietPN();
+            document.MaPN = mapn;
+            document.MaMH = mahh;
+            document.SoLuong = sl;
+            document.DonGia = dongia;
+
+            collection.InsertOneAsync(document);
+
             return true;
         }
 
+        public bool UpdateSoLuongMHSauNhap(string mahh, int sl)
+        {
+            // Convert datetime to date SQL Server 
+            var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
 
+            var slcur = collection.AsQueryable()
+                .Where(w => w.MaMH == mahh)
+                .Select(w => w.SoLuong)
+                .FirstOrDefault();
+
+            var result = collection.UpdateOneAsync(
+                filter: w => w.MaMH == mahh,
+                update: Builders<MatHang>.Update.Set(m => m.SoLuong, slcur + sl));
+
+            Console.WriteLine(result);
+            return true;
+        }
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
@@ -375,8 +431,10 @@ namespace WindowsFormsApp
                     foreach (ListViewItem item in lsvNhaphang.Items)
                     {
                         LuuChitietPN(pn.MaPN, item.SubItems[0].Text, Int32.Parse(item.SubItems[2].Text), Int32.Parse(item.SubItems[3].Text)); //lưu chi tiết hóa đơn
-                        string query = "update MatHang set SoLuong = SoLuong + " + Int32.Parse(item.SubItems[2].Text) + "where MaMH = '" + item.SubItems[0].Text + "'";  // cập nhật lại số lượng 
-                        DataProvider.Instance.ExecuteQuery(query);
+                        //string query = "update MatHang set SoLuong = SoLuong + " + Int32.Parse(item.SubItems[2].Text) + "where MaMH = '" + item.SubItems[0].Text + "'";  // cập nhật lại số lượng 
+                        //DataProvider.Instance.ExecuteQuery(query);
+
+                        UpdateSoLuongMHSauNhap(item.SubItems[0].Text, Int32.Parse(item.SubItems[2].Text));
 
                     }
 
@@ -446,6 +504,11 @@ namespace WindowsFormsApp
         }
 
         private void lsvNhaphang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMapn_Click(object sender, EventArgs e)
         {
 
         }

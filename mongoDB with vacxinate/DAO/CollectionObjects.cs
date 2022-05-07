@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ namespace DAO
     }
     public class VacXin
     {
-        public string _id { get; set; }
+        public ObjectId _id { get; set; }
         public string MaVX { get; set; }
         public string TenVX { get; set; }
         public string PhongBenh { get; set; }
@@ -23,7 +24,7 @@ namespace DAO
     }
     public class MatHang
     {
-        public string _id { get; set; }
+        public ObjectId _id { get; set; }
         public string MaMH { get; set; }
         public string TenMH { get; set; }
         public string DonVi { get; set; }
@@ -35,13 +36,13 @@ namespace DAO
 
     public class LoaiHang
     {
-        public string _id { get; set; }
+        public ObjectId _id { get; set; }
         public string MaLH { get; set; }
         public string TenLH { get; set; }
     }
     public class MatHangLoaiHang
     {
-        public string _id { get; set; }
+        public ObjectId _id { get; set; }
         public string MaMH { get; set; }
         public string TenMH { get; set; }
         public string DonVi { get; set; }
@@ -54,7 +55,7 @@ namespace DAO
 
     public class ChiTietHD
     {
-        public string _id { get; set; }
+        public ObjectId _id { get; set; }
         public string MaHD { get; set; }
         public string MaMH { get; set; }
         public int SoLuong { get; set; }
@@ -63,7 +64,7 @@ namespace DAO
 
     public class ChiTietPN
     {
-        public string _id { get; set; }
+        public ObjectId _id { get; set; }
         public string MaPN { get; set; }
         public string MaMH { get; set; }
         public int SoLuong { get; set; }
@@ -72,11 +73,22 @@ namespace DAO
 
     public class NhaCungCap
     {
-        public string _id { get; set; }
+        public ObjectId _id { get; set; }
         public string MaNCC { get; set; }
         public string TenNCC { get; set; }
         public string DiaChi { get; set; }
         public string SDT { get; set; }
         public string Email { get; set; }
     }
+
+    public class HoaDon
+    {
+        public ObjectId _id { get; set; }
+        public string MaHD { get; set; }
+        public string MaKH { get; set; }
+        public DateTime NgayTao { get; set; }
+        public string MaNV { get; set; }
+        public int TongTien { get; set; }
+    }
+
 }

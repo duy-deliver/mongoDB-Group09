@@ -1139,6 +1139,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_BanHang";
             this.Size = new System.Drawing.Size(1254, 834);
+            this.Load += new System.EventHandler(this.UC_BanHang_Load_1);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

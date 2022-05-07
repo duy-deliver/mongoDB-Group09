@@ -1,10 +1,13 @@
 ﻿using BUS;
 using DTO;
+using GUI;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp
@@ -64,8 +67,16 @@ namespace WindowsFormsApp
         // chí
         private string Matudong()
         {
-            string query = "select MaHD from HoaDon";
-            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            //string query = "select MaHD from HoaDon";
+            //DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<HoaDon>("HoaDon");
+
+            var query = collection.AsQueryable()
+                                   .Select(p => p.MaHD)
+                                   .ToList();
+            DataTable dt = MongoConnect.toDataTable(query);
+
             string ma = "";
             if (dt.Rows.Count <= 0)
             {
@@ -118,10 +129,13 @@ namespace WindowsFormsApp
 
             string query = "select * from KhachHang where SDT ='" + id + "'";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+
+
             if (data.Rows.Count > 0)
             {
                 item = new KhachHangDTO(data.Rows[0]);
-                //lblMaKH.Text = data.Rows[0]["MaKH"].ToString();
+                lblMaKH.Text = data.Rows[0]["MaKH"].ToString();
 
             }
             return item;
@@ -139,7 +153,7 @@ namespace WindowsFormsApp
             cmbLoaihang.Text = "";
             txtSoLuong.Value = 0;
             lblGiaban.Text = "0 đ";
-            lblMaKH.Text = "";
+            //lblMaKH.Text = "";
             lblMahh.Text = "";
             //lblMahh.Text = "";
 
@@ -153,16 +167,40 @@ namespace WindowsFormsApp
         private bool LuuHD(HoaDonDTO dh)
         {
             // Convert datetime to date SQL Server 
-            string query = String.Format("insert into HoaDon values('{0}','{1}','{2}','{3}','{4}')", dh.MaHD, dh.MaKH, dh.NgayTao, dh.MaNV, dh.TongTien);
-            DataProvider.Instance.ExecuteQuery(query);
+            //string query = String.Format("insert into HoaDon values('{0}','{1}','{2}','{3}','{4}')",
+            //    dh.MaHD, dh.MaKH, dh.NgayTao, dh.MaNV, dh.TongTien);
+            //DataProvider.Instance.ExecuteQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<HoaDon>("HoaDon");
+
+            var document = new HoaDon();
+            document.MaHD = dh.MaHD;
+            document.MaKH = dh.MaKH;
+            document.NgayTao = dh.NgayTao;
+            document.MaNV = dh.MaNV;
+            document.TongTien = dh.TongTien;
+
+            collection.InsertOneAsync(document);
             return true;
         }
 
 
-        private bool LuuDH(string mahd, string mahh, int sl, int dg)
+        private bool LuuDH(string mahd, string mahh, int sl, int dg)  //prio pending
         {
-            string query = String.Format("insert into ChiTietHD values('{0}','{1}','{2}','{3}')", mahd, mahh, sl, dg);
-            DataProvider.Instance.ExecuteQuery(query);
+            //string query = String.Format("insert into ChiTietHD values('{0}','{1}','{2}','{3}')", mahd, mahh, sl, dg);
+
+            //DataProvider.Instance.ExecuteQuery(query);
+
+            var collection = MongoConnect.Instance.database.GetCollection<ChiTietHD>("ChiTietHD");
+
+            var document = new ChiTietHD();
+            document.MaHD = mahd;
+            document.MaMH = mahh;
+            document.SoLuong = sl;
+            document.DonGia = dg;
+
+            collection.InsertOneAsync(document);
+
             return true;
         }
 
@@ -420,6 +458,24 @@ namespace WindowsFormsApp
             }
         }
 
+        public bool UpdateSoLuongMHSauNhap(string mahh, int sl)
+        {
+            // Convert datetime to date SQL Server 
+            var collection = MongoConnect.Instance.database.GetCollection<MatHang>("MatHang");
+
+            var slcur = collection.AsQueryable()
+                .Where(w => w.MaMH == mahh)
+                .Select(w => w.SoLuong)
+                .FirstOrDefault();
+
+            var result = collection.UpdateOneAsync(
+                filter: w => w.MaMH == mahh,
+                update: Builders<MatHang>.Update.Set(m => m.SoLuong, slcur + sl));
+
+            Console.WriteLine(result);
+            return true;
+        }
+
         private void btnThanhtoan_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtTimkiem.Text))
@@ -450,11 +506,10 @@ namespace WindowsFormsApp
                     {
                         //###thay bang ham update so luong sau nhap
                         LuuDH(hd.MaHD, item.SubItems[0].Text, Int32.Parse(item.SubItems[2].Text), Int32.Parse(item.SubItems[3].Text));  //lưu chi tiết hóa đơn
-                        string query = "update MatHang set SoLuong = SoLuong - " + Int32.Parse(item.SubItems[2].Text) + "where MaMH = '" + item.SubItems[0].Text + "'";  // cập nhật lại số lượng 
-                        DataProvider.Instance.ExecuteQuery(query);
-
+                        //string query = "update MatHang set SoLuong = SoLuong - " + Int32.Parse(item.SubItems[2].Text) + "where MaMH = '" + item.SubItems[0].Text + "'";  // cập nhật lại số lượng 
+                        //DataProvider.Instance.ExecuteQuery(query);
+                        UpdateSoLuongMHSauNhap(item.SubItems[0].Text, Int32.Parse(item.SubItems[2].Text) * -1);
                     }
-
 
                     DataTable dt = KhachHangBUS.Intance.TimKiemDiemTichLuy(lblMaKH.Text);
                     if (dt.Rows.Count >= 0)
@@ -518,6 +573,11 @@ namespace WindowsFormsApp
         }
 
         private void txtSoLuong_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UC_BanHang_Load_1(object sender, EventArgs e)
         {
 
         }
