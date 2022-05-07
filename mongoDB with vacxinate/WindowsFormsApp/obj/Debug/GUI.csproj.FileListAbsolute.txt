@@ -2086,7 +2086,6 @@ D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\WindowsFormsApp\bi
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\WindowsFormsApp\bin\Debug\MongoDB.Bson.xml
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\WindowsFormsApp\bin\Debug\MongoDB.Driver.Core.xml
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\WindowsFormsApp\bin\Debug\DnsClient.xml
-D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\WindowsFormsApp\obj\Debug\GUI.csproj.CopyComplete
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\WindowsFormsApp\bin\Debug\FastMember.dll
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\WindowsFormsApp\bin\Debug\Microsoft.Win32.Registry.dll
 D:\ForStudy\PJ\QuanTri\mongoDB-Group09\mongoDB with vacxinate\WindowsFormsApp\bin\Debug\System.Security.AccessControl.dll
